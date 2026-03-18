@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="/abm/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/abm/Style/style.css" />
+        <link rel="stylesheet" type="text/css" href="/abm/Style/icons.css" />
+        <title>Age of Wonders 4 ABM</title>
+    </head>
+
+    <body>
+        <div class="topbar">
+            <div style="display: flex">
+                <div class="dropdown">
+                    <div class="dropdown-title">Settings ▼</div>
+                    <div class="dropdown-content">
+                        <label>
+                            Selectable Tooltips:
+                            <input type="checkbox" id="tooltipCheckbox" onclick="CheckBoxTooltips()" />
+                        </label>
+                        <br />
+                        <label>
+                            Highlight Numbers:
+                            <input type="checkbox" id="numbersCheckbox" onclick="CheckBoxTooltips()" />
+                        </label>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <label id="languageSelectLabel" style="display: none">
+                <select id="languageSelect" class="button-random" onchange="SwitchToBeta()">
+                    <option value="EN">English</option>
+                </select>
+            </label>
+            <div class="donate" >
+                <a class="prett" href="/abm/HTML/Donate.html">
+                    Donate<img src="/abm/Icons/Text/health.png" width="20px" />
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-title">Mods Database ▼</div>
+                <div class="dropdown-content">
+                    <a class="prett" href="https://minionsart.github.io/aow4db/" target="_blank">
+                        <img src="/abm/Icons/Interface/fav.png" width="20px" /> AOW4 Database
+                    </a>
+                    <a class="prett" href="https://aow4mp.github.io/evolved/" target="_blank">
+                        <img src="/abm/Icons/Interface/fav.png" width="20px" /> AOW4 Evolved
+                    </a>
+                    <a class="prett" href="https://aow4mp.github.io/rbbp/" target="_blank">
+                        <img src="/abm/Icons/Interface/fav.png" width="20px" /> AOW4 RbbP
+                    </a>
+                    <a class="prett" href="https://aow4mp.github.io/abm/" target="_blank">
+                        <img src="/abm/Icons/Interface/fav.png" width="20px" /> AOW4 ABM
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-img">
+            <div id="topButtonContainer" style="display: none">
+                <div id="myCenteredButton"><a href="/abm/HTML/Donate.html">Donate</a></div>
+            </div>
+
+            <a href="/abm/" style=" text-decoration: none;"><div class="hero-text">Age of Wonders 4 ABM</div></a>
+            <div class="mid-text" style="display: none; margin: 15px">
+                Switch To Scorpion Beta Dataset:<input type="checkbox" id="showBetaCheckbox" onclick="SwitchToBeta()" />
+                <br /><i>(only changes exported dataset, images can break, english only)</i>
+            </div>
+            <div class="current-version">Updated: 12 MARCH 2026</div>
+
+            <div class="hero-text" style="display: block">
+                <img style="
+    position: relative;display:block;
+    top: 0px;" src="/abm/Icons/Text/RiseFromRuinLogo.png" width="442px" />
+            </div>
+            <ul id="menu">
+                <li>
+                    <a class="prett" id="menu-units"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/TomeUnitsIcon.png"
+                            width="40px" />Units
+                    </a>
+                    <ul class="menus">
+                        <li class="has-submenu">
+                            <a class="prett" style="color: burlywood" id="submenu-culture"
+                                ><img
+                                    style="margin-top: -20px; margin-bottom: -10px"
+                                    src="/abm/Icons/Interface/Header/CultureUnitsIcon.png"
+                                    width="20px" />Culture ▸
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a id="culture-feudal" href="/abm/HTML/FeudalUnits.html?type=scoutMonarchy"
+                                        ><img src="/abm/Icons/Interface/Header/feudal.png" width="20px" /> Feudal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="culture-high" href="/abm/HTML/HighUnits.html?type=lightseeker"
+                                        ><img src="/abm/Icons/Interface/Header/high.png" width="20px" /> High
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="culture-barbarian" href="/abm/HTML/BarbarianUnits.html?type=pathfinder"
+                                        ><img src="/abm/Icons/Interface//Header/barbarian.png" width="20px" /> Barbarian
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="culture-industrious" href="/abm/HTML/IndustriousUnits.html?type=pioneer"
+                                        ><img src="/abm/Icons/Interface/Header/industrious.png" width="20px" /> Industrious</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="culture-dark" href="/abm/HTML/DarkUnits.html?type=outriderCult%20of%20Death&"
+                                        ><img src="/abm/Icons/Interface/Header/dark.png" width="20px" /> Dark</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="culture-mystic"
+                                        href="/abm/HTML/MysticUnits.html?type=mystic_projectionAttunement&"
+                                        ><img src="/abm/Icons/Interface/Header/mystic.png" width="20px" /> Mystic</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="culture-reaver" href="/abm/HTML/ReaverUnits.html?type=observer&"
+                                        ><img src="/abm/Icons/Interface/Header/reaver.png" width="20px" /> Reaver</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="culture-primal"
+                                        href="/abm/HTML/PrimalUnits.html?type=spirit_trackerAsh%20Sabertooth&"
+                                        ><img src="/abm/Icons/Interface/Header/primal.png" width="20px" /> Primal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="culture-oathsworn"
+                                        href="/abm/HTML/OathswornUnits.html?type=wayfarerHarmony"
+                                        ><img src="/abm/Icons/Interface/Header/oathsworn.png" width="20px" /> Oathsworn</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="culture-architect" href="/abm/HTML/ArchitectUnits.html?type=surveyor&"
+                                        ><img src="/abm/Icons/Interface/Header/architect.png" width="20px" /> Architect</a
+                                    >
+                                </li>
+                                 <li>
+                                    <a id="culture-nomad" href="/abm/HTML/NomadUnits.html?type=duneriderConquerors&"
+                                        ><img src="/abm/Icons/Interface/Header/nomad.png" width="20px" /> Nomad</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a class="prett" style="color: burlywood" id="submenu-tomesU"
+                                ><img
+                                    style="margin-top: -20px; margin-bottom: -10px"
+                                    src="/abm/Icons/Interface/Header/TomeUnitsIcon.png"
+                                    width="20px" />Tomes ▸</a
+                            >
+                            <ul class="submenu">
+                                <li>
+                                    <a
+                                        id="tomesU-astral"
+                                        href="/abm/HTML/AstralTomesUnits.html?type=phantasm_warrior&"
+                                        ><img src="/abm/Icons/Interface/Header/astral.png" width="20px" /> Astral</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-nature" href="/abm/HTML/NatureTomesUnits.html?type=wildspeaker&"
+                                        ><img src="/abm/Icons/Interface/Header/nature.png" width="20px" /> Nature</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-shadow" href="/abm/HTML/ShadowTomesUnits.html?type=bone_horror&"
+                                        ><img src="/abm/Icons/Interface/Header/shadow.png" width="20px" /> Shadow</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="tomesU-order"
+                                        href="/abm/HTML/OrderTomesUnits.html?type=lesser_light_spirit&"
+                                        ><img src="/abm/Icons/Interface/Header/order.png" width="20px" /> Order</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="tomesU-chaos"
+                                        href="/abm/HTML/ChaosTomesUnits.html?type=lesser_magma_spirit&"
+                                        ><img src="/abm/Icons/Interface/Header/chaos.png" width="20px" /> Chaos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="tomesU-materium"
+                                        href="/abm/HTML/MateriumTomesUnits.html?type=copper_golem&"
+                                        ><img src="/abm/Icons/Interface/Header/materium.png" width="20px" /> Materium</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="tomesU-dd"
+                                        href="/abm/HTML/DragonDawnTomesUnits.html?type=wyvern_fledgling"
+                                        ><img src="/abm/Icons/Interface/Header/DragonDawn.png" width="20px" /> Dragon Dawn</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-ea" href="/abm/HTML/EmpiresAshesTomeUnits.html?type=afflictor"
+                                        ><img src="/abm/Icons/Interface/Header/empireAshes.png" width="20px" /> Empires& Ashes</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-pf" href="/abm/HTML/PrimalFuryTomesUnits.html?type=mistling"
+                                        ><img src="/abm/Icons/Interface/Header/PrimalFury.png" width="20px" /> Primal Fury</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-er" href="/abm/HTML/EldritchRealmsTomesUnits.html?type=tentacle"
+                                        ><img src="/abm/Icons/Interface/Header/EldritchRealms.png" width="20px" /> Eldritch
+                                        Realms</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-ww" href="/abm/HTML/WaysOfWarTomeUnits.html?type=monk&"
+                                        ><img src="/abm/Icons/Text/waysofwar.png" width="20px" /> Ways of War</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-gk" href="/abm/HTML/GiantKingsTomeUnits.html?type=clay_charger&"
+                                        ><img src="/abm/Icons/Text/GKLogo.png" width="20px" /> Giant Kings</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="tomesU-ap" href="/abm/HTML/ArchonProphecyTomeUnits.html"
+                                        ><img src="/abm/Icons/Text/ArchonProphecy.png" width="20px" /> Archon
+                                        Prophecy</a
+                                    >
+                                </li>
+                                 <li>
+                                    <a id="tomesU-tob" href="/abm/HTML/ThronesOfBloodUnits.html"
+                                        ><img src="/abm/Icons/Text/ThronesOfBlood.png" width="20px" /> Thrones of Blood</a
+                                    >
+                                </li>
+                                   <li>
+                                    <a id="tomesU-rfr" href="/abm/HTML/RiseFromRuinTomeUnits.html"
+                                        ><img src="/abm/Icons/Text/RiseFromRuin.png" width="20px" /> Rise From Ruin</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a id="submenu-types" class="prett" style="color: burlywood"
+                                ><img
+                                    style="margin-top: -20px; margin-bottom: -10px"
+                                    src="/abm/Icons/Interface/Header/WildlifeUnitsIcon.png"
+                                    width="20px" />Types ▸</a
+                            >
+                            <ul class="submenu">
+                                <li>
+                                    <a id="types-fey" href="/abm/HTML/FeyUnits.html?type=spring_fairy"
+                                        ><img src="/abm/Icons/Interface/Header/fey.png" width="20px" /> Fey</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-animal" href="/abm/HTML/AnimalUnits.html?type=young_caustic_worm&"
+                                        ><img src="/abm/Icons/Interface/Header/animal.png" width="20px" /> Animal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-infernal-fiend" href="/abm/HTML/FiendUnits.html?type=inferno_puppy&"
+                                        ><img src="/abm/Icons/Interface/Header/infernal_fiend.png" width="20px" /> Infernal Fiend</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-dragons" href="/abm/HTML/DragonUnits.html?type=bone_wyvern&"
+                                        ><img src="/abm/Icons/Interface/Header/dragon.png" width="20px" /> Dragons</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-demi" href="/abm/HTML/DemiGiantUnits.html?type=butcher_ogre&"
+                                        ><img src="/abm/Icons/Interface/Header/large_target.png" width="20px" />
+                                        Demi/Giants</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="types-elemental"
+                                        href="/abm/HTML/ElementalUnits.html?type=lesser_snow_spirit&"
+                                        ><img src="/abm/Icons/Interface/Header/elemental.png" width="20px" /> Elemental</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-undead" href="/abm/HTML/UndeadUnits.html?type=skeleton_mage&"
+                                        ><img src="/abm/Icons/Interface/Header/undead.png" width="20px" /> Undead</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-ethereal" href="/abm/HTML/EtherealUnits.html?type=astral_wisp&"
+                                        ><img src="/abm/Icons/Interface/Header/ethereal.png" width="20px" /> Ethereal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-plant" href="/abm/HTML/PlantUnits.html?type=entwined_thrall&"
+                                        ><img src="/abm/Icons/Interface/Header/plant.png" width="20px" /> Plant</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-celestial" href="/abm/HTML/CelestialUnits.html?type=lightbringer&"
+                                        ><img src="/abm/Icons/Interface/Header/celestial.png" width="20px" /> Celestial</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-construct" href="/abm/HTML/ConstructUnits.html?type=observer&"
+                                        ><img src="/abm/Icons/Interface/Header/construct.png" width="20px" /> Construct</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="types-umbral"
+                                        href="/abm/HTML/UmbralDemonsUnits.html?type=mature_splitterling"
+                                        ><img src="/abm/Icons/Interface/Header/umbral_demon.png" width="20px" /> Umbral
+                                        Demon</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-accursed" href="/abm/HTML/AccursedFiends.html"
+                                        ><img src="/abm/Icons/Interface/Header/accursed_fiend.png" width="20px" /> Accursed
+                                        Fiend</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="types-tome" href="/abm/HTML/TomeFormUnits.html"
+                                        ><img src="/abm/Icons/Interface/Header/elfkin.png" width="20px" /> Tome
+                                        Form</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a id="submenu-class" class="prett" style="color: burlywood"
+                                ><img
+                                    style="margin-top: -20px; margin-bottom: -10px"
+                                    src="/abm/Icons/Interface/Header/shock_unit.png"
+                                    width="20px" />Classes ▸
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a id="class-scout" href="/abm/HTML/ScoutUnits.html?type=wayfarerHarmony&"
+                                        ><img src="/abm/Icons/Interface/Header/scout_unit.png" width="20px" /> Scout</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-skirmisher" href="/abm/HTML/SkirmisherUnits.html?type=harrier&"
+                                        ><img src="/abm/Icons/Interface/Header/skirmisher_unit.png" width="20px" />
+                                        Skirmisher</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="class-fighter"
+                                        href="/abm/HTML/FighterUnits.html?type=animated_frost_sword&"
+                                        ><img src="/abm/Icons/Interface/Header/fighter_unit.png" width="20px" /> Fighter</a
+                                    >
+                                </li>
+                                  <li>
+                                    <a
+                                        id="class-magicfighter"
+                                        href="/abm/HTML/MagicFighterUnits.html"
+                                        ><img src="/abm/Icons/Interface/Header/magic_fighter.png" width="20px" /> Magic Fighter</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-ranged" href="/abm/HTML/RangedUnits.html?type=skeleton_archer&"
+                                        ><img src="/abm/Icons/Interface/Header/ranged_unit.png" width="20px" /> Ranged</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-polearm" href="/abm/HTML/PolearmUnits.html?type=sworn_guardHarmony&"
+                                        ><img src="/abm/Icons/Interface/Header/polearm_unit.png" width="20px" /> Polearm</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-shock" href="/abm/HTML/ShockUnits.html?type=lesser_storm_spirit&"
+                                        ><img src="/abm/Icons/Interface/Header/shock_unit.png" width="20px" /> Shock</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-shield" href="/abm/HTML/ShieldUnits.html?type=skeleton_warrior&"
+                                        ><img src="/abm/Icons/Interface/Header/shield_unit.png" width="20px" /> Shield</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        id="class-battlemage"
+                                        href="/abm/HTML/BattleMageUnits.html?type=skeleton_mage&"
+                                        ><img src="/abm/Icons/Interface/Header/battle_mage_unit.png" width="20px" />
+                                        Battlemage</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-support" href="/abm/HTML/SupportUnits.html?type=lithorine_core&"
+                                        ><img src="/abm/Icons/Interface/Header/support_unit.png" width="20px" /> Support</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="class-mythic" href="/abm/HTML/MythicUnits.html?type=primal_crocodile&"
+                                        ><img src="/abm/Icons/Interface/Header/mythic_unit.png" width="20px" /> Mythic</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a id="submenu-other" class="prett" style="color: burlywood"
+                                ><img
+                                    style="margin-top: -20px; margin-bottom: -10px"
+                                    src="/abm/Icons/Interface/Header/tower.png"
+                                    width="20px" />Other ▸</a
+                            >
+                            <ul class="submenu">
+                                <li>
+                                    <a id="other-siegecraft" href="/abm/HTML/SiegeCraftUnits.html?type=ballista&"
+                                        ><img src="/abm/Icons/Interface/Header/siegecraft.png" width="20px" />
+                                        Siegecraft</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="other-towers" href="/abm/HTML/TowerUnits.html?type=fire_runestone&"
+                                        ><img src="/abm/Icons/Interface/Header/tower.png" width="20px" /> Towers</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="menu-tomes" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/TomesIcon.png"
+                            width="40px" />Tomes</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a id="tomes-astral" href="/abm/HTML/AstralTomes.html?type=tome_of_evocation&"
+                                ><img src="/abm/Icons/Interface/Header/astral.png" width="20px" /> Astral</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-nature" href="/abm/HTML/NatureTomes.html?type=tome_of_roots&"
+                                ><img src="/abm/Icons/Interface/Header/nature.png" width="20px" /> Nature</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-shadow" href="/abm/HTML/ShadowTomes.html?type=tome_of_necromancy&"
+                                ><img src="/abm/Icons/Interface/Header/shadow.png" width="20px" /> Shadow</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-order" href="/abm/HTML/OrderTomes.html?type=tome_of_zeal&"
+                                ><img src="/abm/Icons/Interface/Header/order.png" width="20px" /> Order</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-chaos" href="/abm/HTML/ChaosTomes.html?type=tome_of_pyromancy&"
+                                ><img src="/abm/Icons/Interface/Header/chaos.png" width="20px" /> Chaos</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-materium" href="/abm/HTML/MateriumTomes.html?type=tome_of_rock&.html"
+                                ><img src="/abm/Icons/Interface/Header/materium.png" width="20px" /> Materium</a
+                            >
+                        </li>
+                        <li>
+                            <a id="tomes-dual" href="/abm/HTML/DualTomes.html?type=tome_of_evolution&.html"
+                                ><img src="/abm/Icons/Interface/Header/dual.png" width="20px" /> Dual</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                id="tomes-general"
+                                href="/abm/HTML/GeneralCultureTomes.html?type=general_research&.html"
+                                ><img src="/abm/Icons/Interface/Header/population.png" width="20px" /> General& Culture</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="menu-spells" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/SpellsIcon.png"
+                            width="40px" />Spells</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a
+                                id="spells-transform"
+                                href="/abm/HTML/TransformationSpells.html?type=Minor%20Race%20Transformations&sort=name:true"
+                                ><img src="/abm/Icons/Interface/Header/angelic_transformation.png" width="20px" />
+                                Transformations</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                id="spells-combat"
+                                href="/abm/HTML/CombatSpells.html?type=Healing%20Spells&sort=name:true"
+                                ><img src="/abm/Icons/Interface/Header/tacticalcombatpoints.png" width="20px" /> Combat Spells</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                id="spells-enchant"
+                                href="/abm/HTML/EnchantmentSpells.html?type=Generic%20Research&sort=name:true"
+                                ><img src="/abm/Icons/Interface/Header/adaptive_armor.png" width="20px" /> Enchantments</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                id="spells-strategic"
+                                href="/abm/HTML/StrategicSpells.html?type=Summon%20Spells&sort=name:true"
+                                ><img src="/abm/Icons/Interface/Header/strategiccombatpoints.png" width="20px" /> Strategic
+                                Spells</a
+                            >
+                        </li>
+                        <li>
+                            <a id="spells-siege" href="/abm/HTML/SiegeProjects.html?&sort=name:true"
+                                ><img src="/abm/Icons/Interface/Header/siegehealth.png" width="20px" /> Siege Projects</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="menu-world" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/StructuresIcon.png"
+                            width="40px" />World Map</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a id="world-city" href="/abm/HTML/CityTrees.html"
+                                ><img src="/abm/Icons/Interface/Header/city.png" width="20px" /> City Tree</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-province" href="/abm/HTML/ProvinceImprovements.html?type=Foresters&"
+                                ><img src="/abm/Icons/Interface/Header/mine.png" width="15px" /> Province Impr.</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-magic" href="/abm/HTML/MagicMaterials.html"
+                                ><img src="/abm/Icons/Interface/Header/arcanium_ore.png" width="20px" /> Magic
+                                Materials</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-ancient" href="/abm/HTML/AncientWonders.html?type=Bronze&"
+                                ><img src="/abm/Icons/Interface/Header/goldWonder.png" width="20px" /> Ancient Wonders</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-spawner" href="/abm/HTML/Spawners.html"
+                                ><img src="/abm/Icons/Interface/Header/Infestation.png" width="20px" /> Infestations</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-landmarks" href="/abm/HTML/Landmarks.html"
+                                ><img src="/abm/Icons/Interface/Header/landmark.png" width="20px" /> Landmarks</a
+                            >
+                        </li>
+                        <li>
+                            <a id="world-cosmic" href="/abm/HTML/CosmicHappenings.html?type=Minor&"
+                                ><img src="/abm/Icons/Interface/Header/category_icon_Asteroid.png" width="20px" />
+                                Cosmic Happenings</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="menu-hero" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/HeroIcon.png"
+                            width="40px" />Heroes</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a
+                                id="hero-equipment"
+                                href="/abm/HTML/HeroEquipment.html?type=Primary%20Weapon&sort=tier:true"
+                                ><img src="/abm/Icons/Interface/Header/equipment.png" width="15px" /> Equipment</a
+                            >
+                        </li>
+                        <li>
+                            <a id="hero-ascension" href="/abm/HTML/HeroSkills.html"
+                                ><img src="/abm/Icons/Interface/Header/ascended_artificer_hero_skill_normal.png" width="20px" /> Ascension
+                                Skills</a
+                            >
+                        </li>
+                        <li>
+                            <a id="hero-ambition" href="/abm/HTML/HeroAmbitions.html"
+                                ><img src="/abm/Icons/Interface/Header/challenger.png" width="20px" /> Ambitions</a
+                            >
+                        </li>
+                        <li>
+                            <a id="hero-governance" href="/abm/HTML/HeroGovernance.html"
+                                ><img src="/abm/Icons/Interface/Header/eldritch_governor.png" width="20px" />
+                                Governance</a
+                            >
+                        </li>
+                        <li>
+                            <a id="hero-skill" href="/abm/HTML/HeroSkillsList.html"
+                                ><img src="/abm/Icons/Interface/Header/piercing_shot.png" width="20px" />Skill List</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="menu-empire" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/EmpireIcon.png"
+                            width="40px" />Empire</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a id="empire-tree" href="/abm/HTML/EmpireTree.html"
+                                ><img src="/abm/Icons/Interface/Header/EmpireIcon.png" width="20px" /> Empire Tree</a
+                            >
+                        </li>
+                        <li>
+                            <a id="empire-destiny" href="/abm/HTML/DestinyTraits.html"
+                                ><img src="/abm/Icons/Interface/Header/mark_of_the_owl.png" width="20px" />
+                                Destiny Traits</a
+                            >
+                        </li>
+                        <li>
+                            <a id="empire-faction" href="/abm/HTML/FactionCreation.html"
+                                ><img src="/abm/Icons/Interface/Header/adaptable.png" width="20px" />Faction Traits</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="menu-abilities" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/ability_icon_fire.png"
+                            width="40px" />Abilities</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a id="abilities-active" href="/abm/HTML/Abilities.html"
+                                ><img src="/abm/Icons/Interface/Header/acid_spray_scrap_hermit.png" width="20px" />Active
+                                Abilities</a
+                            >
+                        </li>
+                        <li>
+                            <a id="abilities-passive" href="/abm/HTML/Passives.html"
+                                ><img src="/abm/Icons/Interface/Header/accursed_body.png" width="20px" />Passives</a
+                            >
+                        </li>
+                        <li>
+                            <a id="abilities-status" href="/abm/HTML/StatusEffects.html"
+                                ><img src="/abm/Icons/Interface/Header/wet.png" width="20px" />Status Effects</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="menu-builder" class="prett" style="color: burlywood"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/Info.png"
+                            width="40px" />Builds/Planners</a
+                    >
+                    <ul class="menus">
+                        <li>
+                            <a id="builder-faction" href="/abm/HTML/FactionCreator.html"
+                                ><img src="/abm/Icons/Interface/Header/druidic_terraformers.png" width="20px" />Faction
+                                Builder</a
+                            >
+                        </li>
+                        <li>
+                            <a id="builder-hero" href="/abm/HTML/HeroBuilder.html"
+                                ><img src="/abm/Icons/Interface/Header/arcane_surge_2.png" width="20px" />Hero Builder</a
+                            >
+                        </li>
+                        <li>
+                            <a id="build-list" href="/abm/HTML/FactionList.html"
+                                ><img src="/abm/Icons/Interface/Header/champion_medal_sprint.png" width="20px" />Builds List</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="menu-search" class="prett" style="color: coral" href="/abm/HTML/Search.html"
+                        ><img
+                            style="margin-top: -20px; margin-bottom: -10px"
+                            src="/abm/Icons/Interface/Header/search.png"
+                            width="40px" />Search</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <dialog id="hoverDiv" class="tooltiptextnew"></dialog>
+        <dialog id="hoverDiv2" class="tooltiptextnew"></dialog>
+    </body>
+
+    <style>
+        .topbar {
+            color: white;
+           
+            font-size: 14px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            z-index: 30;
+            flex-direction: row;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .donate {
+          
+    right: -152px;
+    position: relative;
+    display: inline-block;
+    background-color: #4b1d63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    /* height: 30px; */
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/abm/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+        }
+
+        .dropdown-title {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: white;
+            min-width: 150px;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+        }
+
+        .dropdown-content img {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .dropdown-content select,
+        .dropdown-content input {
+            margin: 4px 0;
+        }
+    </style>
+</html>
