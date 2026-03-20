@@ -280,7 +280,7 @@
     "name": "Rock Giant King"
    }
   ],
-  "name": "Giant Axe",
+  "name": "Spirit Alpha Sword",
   "DLC": "GIANTKINGS ",
   "ability_slugs": [
    {
@@ -7437,7 +7437,11 @@
   "resid": 5016521812356,
   "id": "celestial_griffon_mount_item_tier_ii",
   "DLC": "ARCHONPROPHECY ",
-  "ability_slugs": [],
+  "ability_slugs": [
+   {
+    "slug": "cestus_leap_ability_celestial_griffon_mount_item_tier_ii"
+   }
+  ],
   "description": "Unit has:<bulletlist><bullet>Very Fast Movement.</bullet><bullet>The Cavalry unit type.</bullet><bullet>Flying Movement.</bullet></bulletlist>",
   "name": "Celestial Griffon Mount",
   "tier": "Tier II",
@@ -16167,7 +16171,11 @@
  {
   "resid": 4728758993573,
   "id": "eagle_mount_item_tier_2",
-  "ability_slugs": [],
+  "ability_slugs": [
+   {
+    "slug": "0000041b00000536"
+   }
+  ],
   "description": "Unit has:<bulletlist><bullet>Very Fast Movement.</bullet><bullet>The Cavalry unit type.</bullet><bullet>Flying Movement.</bullet></bulletlist>",
   "name": "Eagle Mount",
   "tier": "Tier II",
@@ -19061,7 +19069,7 @@
   "id": "unicorn_mount_item_tier_2",
   "ability_slugs": [
    {
-    "slug": "phase_ability_unicorn_mount_item_tier_2"
+    "slug": "phase_ability__unicorn___banshee_unicorn_mount_item_tier_2"
    }
   ],
   "description": "Unit has:<bulletlist><bullet>Very Fast Movement.</bullet><bullet>The Cavalry unit type.</bullet></bulletlist>",

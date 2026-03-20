@@ -200,7 +200,7 @@
   "slot": "Primary",
   "DLC": "GIANTKINGS ",
   "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Giant Axe",
+  "name": "Spirit Alpha Sword",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"

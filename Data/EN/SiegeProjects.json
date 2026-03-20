@@ -86,7 +86,7 @@
  },
  {
   "resid": 4514010632531,
-  "cost": "200<gold></gold> 100<mana></mana> ",
+  "cost": "100<gold></gold> 50<mana></mana> ",
   "id": "create_earthshatter_engines",
   "description": "<bulletlist><bullet>At the start of the battle, all Wall obstacles are damaged.</bullet><bullet>At the start of the battle, gain 2 <hyperlink>Earthshatter Engine</hyperlink> units on the attacker's side until the end of battle.</bullet><bullet><hyperlink>Earthshatter Engines</hyperlink> are Siegecraft <hyperlink>Units</hyperlink> with short range, area of effect attacks that can destroy obstacles and knock enemy units out of <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Only one type of Siegecraft unit can be brought into <hyperlink>Combat</hyperlink>. If multiple <hyperlink>Siege Projects</hyperlink> would bring them, only the strongest of them will appear.</bullet></bulletlist>",
   "name": "Create Earthshatter Engines",

@@ -11326,16 +11326,19 @@
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeMisc.Wand"
    }
   ],
   "icon": "0000048D000008C9",
   "unlock_requirements": [
    {
-    "num_required": 1,
+    "num_required": 2,
     "token_name": "Astral Dew"
    },
    {
-    "num_required": 1,
+    "num_required": 2,
     "token_name": "Haste Berries"
    }
   ]
@@ -11452,7 +11455,7 @@
   },
   "resid": 5029406707124,
   "id": "innate_spell_jammer_infusion_equipment_upgrade",
-  "description": "",
+  "description": "All spells in the <hyperlink>Combat</hyperlink> cost +20% more <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> per stack of this ability.",
   "name": "Innate Spell Jammer",
   "tags": [
    {
@@ -13734,7 +13737,7 @@
   },
   "resid": 4995046968716,
   "id": "equipment_upgrade_passive_caretaker",
-  "description": "Animals in this army require 20% less base <hyperlink>Unit Upkeep</hyperlink>.",
+  "description": "Animals in this army require 10% less base <hyperlink>Unit Upkeep</hyperlink>.",
   "name": "Caretaker",
   "tags": [
    {
@@ -15838,7 +15841,7 @@
   "icon": "000003FE000008C5",
   "unlock_requirements": [
    {
-    "num_required": 2,
+    "num_required": 1,
     "token_name": "Arcanium Ore"
    }
   ]
@@ -25224,9 +25227,9 @@
    ]
   },
   "resid": 4801773439659,
-  "id": "equipment_upgrade_defense_hp__15",
+  "id": "equipment_upgrade_defense_hp__30",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+15 Hit Points",
+  "name": "+30 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"
@@ -25291,9 +25294,9 @@
    ]
   },
   "resid": 4801773439658,
-  "id": "equipment_upgrade_defense_hp__10",
+  "id": "equipment_upgrade_defense_hp__20",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+10 Hit Points",
+  "name": "+20 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"
@@ -25358,9 +25361,9 @@
    ]
   },
   "resid": 4801773439629,
-  "id": "equipment_upgrade_defense_hp__5",
+  "id": "equipment_upgrade_defense_hp__10",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+5 Hit Points",
+  "name": "+10 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"

@@ -546,7 +546,7 @@
     "name": "Battle Divination",
     "spell_slug": "battle_divination",
     "tier": 5,
-    "type": "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>"
+    "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
    },
    {
     "description": "A Support Unit that can foresee the future and use that knowledge to strengthen and protect other units.",
@@ -1054,9 +1054,9 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Summons an <hyperlink>Umbral Juggernaut</hyperlink> on target hex.",
-    "name": "Summon Umbral Juggernaut",
-    "spell_slug": "summon_umbral_juggernaut",
+    "description": "Summons an Abductor on target hex.",
+    "name": "Summon Abductor",
+    "spell_slug": "summon_abductor",
     "tier": 3,
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
@@ -2179,7 +2179,7 @@
     "type": "Combat Spell"
    },
    {
-    "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>A base % chance of inflicting Disrupted for <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+    "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>A base 60% chance of inflicting Disrupted for 2 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>Effects are increased for Single Shot attacks.",
     "name": "Disrupting Blades",
     "spell_slug": "disrupting_blades",
     "tier": 8,
@@ -2497,7 +2497,7 @@
     "type": "<hyperlink>Unit</hyperlink>"
    },
    {
-    "description": "Makes the target race gain an affinity for gold, granting them:<bulletlist><bullet>+ <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>+1 <gold></gold> <hyperlink>Gold</hyperlink> per <population></population> <hyperlink>Population</hyperlink> in their <hyperlink>Cities</hyperlink>.</bullet></bulletlist>",
+    "description": "Makes the target race gain an affinity for gold, granting them:<bulletlist><bullet>+2 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>+1 <gold></gold> <hyperlink>Gold</hyperlink> per <population></population> <hyperlink>Population</hyperlink> in their <hyperlink>City Caps</hyperlink>.</bullet><bullet>Gilded Shield.</bullet></bulletlist>",
     "name": "Goldtouched",
     "spell_slug": "goldtouched",
     "tier": 8,
@@ -2536,7 +2536,7 @@
     "type": "<hyperlink>Unit</hyperlink>"
    },
    {
-    "description": "Target enemies in a -hex radius:<bulletlist><bullet>Gain 3 Sundered Defense.</bullet><bullet>Sustain <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet></bulletlist>",
+    "description": "Target enemies in a 1-hex radius:<bulletlist><bullet>Suffers 2 Sundered Defense.</bullet><bullet>Sustain 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet>",
     "name": "Melt Armor",
     "spell_slug": "melt_armor",
     "tier": 5,
@@ -2595,14 +2595,14 @@
     "type": "<hyperlink>Siege Project</hyperlink>"
    },
    {
-    "description": "In target habitable or uninhabitable <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy <hyperlink>Units</hyperlink> sustain 10 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>The province loses any <hyperlink>Mountain</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Diggable Earth</hyperlink>.</bullet><bullet>Summon a <hyperlink>Stone Spirit</hyperlink> on the target hex.</bullet></bulletlist>",
+    "description": "In target <hyperlink>Province</hyperlink> that contains Mountains or Rock overlays:<bulletlist><bullet>Reform and flatten the terrain.</bullet><bullet>Remove Mountains.</bullet><bullet>Remove diggable earth.</bullet><bullet>Summons <hyperlink>Lesser Stone Spirit</hyperlink> with Champion medal.</bullet></bulletlist>",
     "name": "Earth Shatter",
     "spell_slug": "earth_shatter",
     "tier": 5,
     "type": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>"
    },
    {
-    "description": "Deals <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> to units in a -hex radius and inflicts Slowed.<br></br>This spell deals double damage to obstacles.",
+    "description": "<bulletlist><bullet>Deals 50 unblockable <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> to all summoned and Towers <hyperlink>Units</hyperlink> in a 3-hex radius.</bullet><bullet>Inflicts Immobilized for 3 <turn></turn> <hyperlink>Turns</hyperlink> on all affected units.</bullet></bulletlist><br></br>This spell deals double damage to the obstacles.",
     "name": "Seismic Shock",
     "spell_slug": "seismic_shock",
     "tier": 5,
@@ -2770,7 +2770,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>"
    },
    {
-    "description": "For <turn></turn> Turns, makes target friendly unit:<bulletlist><bullet>Deal +% damage.</bullet><bullet>Gain +5 Bolstered Defense.</bullet><bullet>Gain +5 Bolstered Resistance.</bullet><bullet>Gain +5 Status Protection.</bullet></bulletlist>",
+    "description": "For 2 <turn></turn> <hyperlink>Turns</hyperlink>, target friendly unit:<bulletlist><bullet>Deals +200% damage</bullet><bullet>Gain +2 Bolstered Defense.</bullet><bullet>Gain +2 Bolstered Resistance.</bullet><bullet>Gain +2 Status Protection.</bullet></bulletlist>",
     "name": "Exalted Champion",
     "spell_slug": "exalted_champion",
     "tier": 9,
@@ -3006,7 +3006,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Target enemy army:<bulletlist><bullet>Sustains 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>Loses 50% of its <movementgeneral></movementgeneral> Move Points on the <hyperlink>World Map</hyperlink>.</bullet></bulletlist>",
+    "description": "All <hyperlink>Units</hyperlink> in target enemy army loses -50% Move Points and have for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Burden of Guilt",
     "spell_slug": "burden_of_guilt",
     "tier": 3,
@@ -3091,7 +3091,7 @@
     "name": "Summon Zealot",
     "spell_slug": "summon_zealot",
     "tier": 1,
-    "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
+    "type": "World Map Summon Spell"
    }
   ],
   "initial_upgrades": [
@@ -3133,7 +3133,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "Summons a full army stack of low-Tier Undead units onto a target world hex.",
+    "description": "Summons a full <hyperlink>Army</hyperlink> stack of Undead <hyperlink>Units</hyperlink> onto a target World Map hex.<br></br>Summoned <hyperlink>Units</hyperlink>:<bulletlist><bullet><hyperlink>Banshee</hyperlink> - 30%</bullet><bullet><hyperlink>Bone Horror</hyperlink> - 30%</bullet><bullet><hyperlink>Corrupt Soul</hyperlink> - 30%</bullet><bullet><hyperlink>Reaper</hyperlink> - 10%</bullet></bulletlist>",
     "name": "Raise Undead Army",
     "spell_slug": "raise_undead_army",
     "tier": 9,
@@ -3401,7 +3401,7 @@
     "type": "<hyperlink>Empire Bonus</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>Gain +10 <souls></souls> <hyperlink>Souls</hyperlink> income.</bullet><bullet>Costs 30 <gold></gold> <hyperlink>Gold</hyperlink> upkeep.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>Gain +20 <souls></souls> <hyperlink>Soul</hyperlink> income.</bullet><bullet>Upkeep cost:<bulletlist></bullet><bullet>10 <gold></gold> <hyperlink>Gold</hyperlink> upkeep.</bullet><bullet>10 <mana></mana> <hyperlink>Mana</hyperlink> upkeep.</bullet></bulletlist></bulletlist>",
     "name": "Soul Collection",
     "spell_slug": "soul_collection",
     "tier": 1,
@@ -3461,7 +3461,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Target enemy army gains 3 Demoralized for 1 <turn></turn> Turn.",
+    "description": "All <hyperlink>Units</hyperlink> in target enemy <hyperlink>Army</hyperlink> suffers 2 Demoralized for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Prelude of Doom",
     "spell_slug": "prelude_of_doom",
     "tier": 3,
@@ -3507,7 +3507,7 @@
   "icon": "0000041B000012C5",
   "skills": [
    {
-    "description": "<bulletlist><bullet>Enemy units have a base % chance of becoming Disrupted for <turn></turn> Turns.</bullet><bullet>Dispels <hyperlink>Positive Status Effects</hyperlink> from enemies.</bullet><bullet>Dispels <hyperlink>Negative Status Effects</hyperlink> from allies.</bullet></bulletlist>",
+    "description": "All <hyperlink>Units</hyperlink> on the battlefield has their:<bulletlist><bullet>2 of their <hyperlink>Positive Status Effects</hyperlink> removed.</bullet><bullet>2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist><br></br>Enemy <hyperlink>Units</hyperlink> on the battlefield Disrupted for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Disruption Wave",
     "spell_slug": "disruption_wave",
     "tier": 10,
@@ -3651,7 +3651,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "For <turn></turn> Turns, target friendly Magic Origin unit gains:<bulletlist><bullet>5 Strengthened</bullet><bullet>3 Bolstered Defense</bullet><bullet>3 Bolstered Resistance</bullet><bullet>Static Charge</bullet></bulletlist>",
+    "description": "For 3 <turn></turn> <hyperlink>Turns</hyperlink>, target friendly Magic Origin unit gains:<bulletlist><bullet>3 Strengthened.</bullet><bullet>+3 Bolstered Defense.</bullet><bullet>+3 Bolstered Resistance.</bullet><bullet>Static Charge.</bullet></bulletlist>",
     "name": "Arcane Supercharge",
     "spell_slug": "arcane_supercharge",
     "tier": 3,
@@ -3771,14 +3771,14 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Target Enemies in a -hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>3 Sundered Resistance.</bullet></bulletlist>",
+    "description": "Target Enemies in a 1-hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>2 Sundered Resistance.</bullet></bulletlist>",
     "name": "Mental Mark",
     "spell_slug": "mental_mark",
     "tier": 3,
     "type": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>"
    },
    {
-    "description": "All enemies in the target army provide you with vision for 10 <turn></turn> Turns.",
+    "description": "All enemies in the target army provide you with vision for 5 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turns</hyperlink>.",
     "name": "Scry Enemy",
     "spell_slug": "scry_enemy",
     "tier": 3,
@@ -3858,7 +3858,7 @@
   "icon": "0000041B00001214",
   "skills": [
    {
-    "description": "In target enemy army:<bulletlist><bullet>All units sustain 20 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>All units suffer -1 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
+    "description": "All <hyperlink>Units</hyperlink> in target enemy army suffer -2 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Lightning Torrent",
     "spell_slug": "lightning_torrent",
     "tier": 3,
@@ -3925,7 +3925,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Target friendly unit and another within hexes gain Static Shield for <turn></turn> Turns.",
+    "description": "Target friendly unit, and another friendly unit within 3 hexes, gains:<bulletlist><bullet>Shield that has a base 30% chance of inflicting Stunned on attackers for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>+1 Bolstered Defense for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>+1 Bolstered Resistance for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
     "name": "Static Shield",
     "spell_slug": "static_shield",
     "tier": 3,
@@ -3946,7 +3946,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "Target friendly unit:<bulletlist><bullet>Becomes Invulnerable for 1 <turn></turn> Turn.</bullet><bullet>Has their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist><br></br>Cannot be used on a unit more than once per battle.",
+    "description": "Target friendly unit:<bulletlist><bullet>Becomes Invulnerable for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Has their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet><bullet>Works multiple times on the same unit.</bullet></bulletlist>",
     "name": "Mark of Invulnerability",
     "spell_slug": "mark_of_invulnerability",
     "tier": 2,
@@ -3973,7 +3973,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>"
    },
    {
-    "description": "Target friendly city gains:<bulletlist><bullet>+40 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>Income bonuses from Positive City Stability are doubled.</bullet></bulletlist>",
+    "description": "Target friendly city gains:<bulletlist><bullet>+50 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>Income bonuses from Positive <happiness></happiness> <hyperlink>City Stability</hyperlink> are 3x times bigger.</bullet></bulletlist>",
     "name": "Blessing of Paradise",
     "spell_slug": "blessing_of_paradise",
     "tier": 8,
@@ -4100,7 +4100,7 @@
     "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>+10 <food></food> <hyperlink>Food</hyperlink></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink> per <population></population> <hyperlink>Population</hyperlink></bullet><bullet>+2 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per <population></population> <hyperlink>Population</hyperlink></bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+10 <food></food> <hyperlink>Food</hyperlink> income.</bullet><bullet>+4 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>.</bullet><bullet>+4 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>.</bullet></bulletlist>",
     "name": "Temple of Fertility",
     "tier": 3,
     "type": "<hyperlink>City Structure</hyperlink>",
@@ -4201,7 +4201,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet></bulletlist>",
+    "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>+2 <defenseblight></defenseblight> <hyperlink>Blight Protection</hyperlink>.</bullet><bullet>Forest Walk.</bullet><bullet>Forest Camouflage.</bullet></bulletlist>",
     "name": "Leafskin",
     "spell_slug": "leafskin",
     "tier": 3,
@@ -4254,7 +4254,7 @@
   "icon": "0000041B000006BE",
   "skills": [
    {
-    "description": "All units in target enemy army:<bulletlist><bullet>Sustain 20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Suffer -3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 World Map <turn></turn> Turns.</bullet></bulletlist>",
+    "description": "All <hyperlink>Units</hyperlink> in target enemy army suffer -2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Blizzard",
     "spell_slug": "blizzard",
     "tier": 3,
@@ -4328,20 +4328,20 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "When killing non-racial Tier I-III units, gain the option to spend <souls></souls> <hyperlink>Souls</hyperlink> to create a <hyperlink>Bone Horror</hyperlink> after combat.<br></br>One <hyperlink>Bone Horror</hyperlink> can be created for every 4 tiers worth of units killed.",
+    "description": "When killing non-racial <hyperlink>Unit tier</hyperlink> II-III <hyperlink>Units</hyperlink>, gain the option to spend <souls></souls> <hyperlink>Soul</hyperlink> to create a <hyperlink>Bone Horror</hyperlink> after <hyperlink>Combat</hyperlink>.",
     "name": "Bone Horror Reanimation",
-    "tier": 4,
+    "tier": 1,
     "type": "<hyperlink>Empire Bonus</hyperlink>"
    },
    {
-    "description": "Friendly units in a -hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain + maximum <hyperlink><hp></hp> Hit Points</hyperlink> until the end of battle.</bullet><bullet>Have <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
+    "description": "Friendly <hyperlink>Units</hyperlink> in a 1-hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain +5 maximum <hyperlink><hp></hp> Hit Point</hyperlink> until the end of battle.</bullet><bullet>Have 2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
     "name": "Soul Overflow",
     "spell_slug": "soul_overflow",
     "tier": 3,
     "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
    },
    {
-    "description": "Target friendly army:<bulletlist><bullet>Heal non-Undead units for 20 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Heal Undead units for 40 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "All Undead <hyperlink>Units</hyperlink> in target friendly <hyperlink>Army</hyperlink> restore 20% out of their total amount of <hyperlink><hp></hp> Hit Points</hyperlink>.",
     "name": "Feast of Souls",
     "spell_slug": "feast_of_souls",
     "tier": 3,
@@ -4350,7 +4350,7 @@
    {
     "description": "Summons a <hyperlink>Banshee</hyperlink>, a vengeful spirit that lowers morale and weakens enemies with its piercing wails.",
     "name": "Summon Banshee",
-    "spell_slug": "summon_banshee",
+    "spell_slug": "summon_corrupt_soul",
     "tier": 4,
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    }
@@ -4368,7 +4368,7 @@
   "icon": "0000041B000002F6",
   "skills": [
    {
-    "description": "Friendly Animal and Cavalry units in a -hex radius gain:<bulletlist><bullet>2 Bolstered Defense</bullet><bullet>2 Strengthened</bullet></bulletlist>",
+    "description": "Friendly Animal and Cavalry units in a 2-hex radius gain:<bulletlist><bullet>+2 Bolstered Defense</bullet><bullet>+2 Strengthened</bullet></bulletlist>",
     "name": "Call of the Wild",
     "spell_slug": "call_of_the_wild",
     "tier": 2,
@@ -4382,7 +4382,7 @@
     "type": "<hyperlink>Unit</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>Choose a Tier I or Tier II Animal unit to add to your army.</bullet><bullet>The available Animals depend on the type of terrain the spell is cast on.</bullet></bulletlist>",
+    "description": "Summons a random Tier I-II Animal <hyperlink>Unit</hyperlink> onto the target world hex.<br></br>The actual summoned Animal depends on the type of the terrain this skill is cast on.",
     "name": "Call Wild Animal",
     "spell_slug": "call_wild_animal",
     "tier": 2,
@@ -4396,7 +4396,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Target enemy:<bulletlist><bullet>Becomes Distracted.</bullet><bullet>Suffers 3 Sundered Defense.</bullet></bulletlist>",
+    "description": "Target enemy:<bulletlist><bullet>Becomes Distracted.</bullet><bullet>Suffers Sundered Defense.</bullet>",
     "name": "Mark as Prey",
     "spell_slug": "mark_as_prey",
     "tier": 1,
@@ -4802,7 +4802,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>"
    },
    {
-    "description": "Target one of your <minorcity></minorcity><hyperlink>Free City</hyperlink> <hyperlink>Vassals</hyperlink>:<bulletlist><bullet>Summon 2 random Fiends under your control, one will be Tier III and the other Tier IV.</bullet><bullet>The <hyperlink>Vassal</hyperlink> loses:<bulletlist></bullet><bullet>A <hyperlink>Vassalage Phase</hyperlink> diplomatic stage.</bullet><bullet>1 <population></population> <hyperlink>Population</hyperlink>.</bullet></bulletlist></bulletlist><br></br>Cannot be cast on a <rs_vassalage-3></rs_vassalage-3> <hyperlink>Denying Tributary</hyperlink>.",
+    "description": "<bulletlist><bullet>Summons 3 random Tier IV Fiend <hyperlink>Units</hyperlink> onto the target Vassal <minorcity></minorcity><hyperlink>Free Cities</hyperlink> hex.</bullet><bullet>That Vassal loses 1 Level of <hyperlink>Diplomatic State</hyperlink> and loses 3 <population></population> <hyperlink>Population</hyperlink>.</bullet></bulletlist><br></br>Cannot be cast on a <rs_vassalage-3></rs_vassalage-3> <hyperlink>Denying Tributary</hyperlink> Vassal.",
     "name": "Demonic Summoning",
     "spell_slug": "demonic_summoning",
     "tier": 7,
@@ -4814,13 +4814,6 @@
     "spell_slug": "demonkin",
     "tier": 9,
     "type": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>"
-   },
-   {
-    "description": "Target city loses 2 <population></population> <hyperlink>Population</hyperlink> and spawns a <hyperlink>Balor</hyperlink>, a mythic unit that wreaks havoc on your foes.",
-    "name": "Summon Balor",
-    "spell_slug": "summon_balor",
-    "tier": 8,
-    "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    }
   ],
   "initial_upgrades": [
@@ -4862,7 +4855,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "All enemy units:<bulletlist><bullet>Sustain <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> that ignores % of <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Are inflicted with Burning.</bullet></bulletlist>",
+    "description": "All enemy units:<bulletlist><bullet>Sustain 10 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Are inflicted with Burning.</bullet><bullet>Have 2 of their <hyperlink>Positive Status Effects</hyperlink> removed.</bullet></bulletlist>",
     "name": "Fan the Inferno",
     "spell_slug": "fan_the_inferno",
     "tier": 7,
@@ -4876,7 +4869,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>Summons a full army of random non-Scout Tier I units that can be produced in a city on the target hex.</bullet><bullet>If cast within an enemy <hyperlink>Province</hyperlink>, instantly pillages it.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>Summons a full army of random non-Scout <hyperlink>Unit tiers</hyperlink> II-III <hyperlink>Units</hyperlink> that can be produced in a city on the target hex.</bullet><bullet>If cast within an enemy Province, instantly pillages it.</bullet></bulletlist>",
     "name": "Golden Horde",
     "spell_slug": "golden_horde",
     "tier": 7,
@@ -5083,7 +5076,7 @@
     "name": "Houndmaster",
     "tier": 1,
     "unit_slug": "houndmaster",
-    "type": "<hyperlink>Unit</hyperlink>"
+    "type": "Unit Unlock"
    }
   ],
   "initial_upgrades": [
@@ -5104,7 +5097,7 @@
   "icon": "000003E300005218",
   "skills": [
    {
-    "description": "Target <hyperlink>Province</hyperlink> with <hyperlink>Forest</hyperlink>:<bulletlist><bullet>Loses <hyperlink>Forest</hyperlink>.</bullet><bullet>An <hyperlink>Army</hyperlink> of Animals and Plants is summoned under your control.</bullet></bulletlist>",
+    "description": "Target Province with Forest:<bulletlist><bullet>Loses Forest.</bullet><bullet>An Army of Plant <hyperlink>Units</hyperlink> is summoned under your control.<br></br><br></br>Summoned Units:<bulletlist></bullet><bullet>Entwined Protector - 34%</bullet><bullet>Entwined Scourge - 34%</bullet><bullet>Nymph - 29%</bullet><bullet>Horned God - 3%</bullet></bulletlist>",
     "name": "Awaken the Forest",
     "spell_slug": "awaken_the_forest",
     "tier": 8,
@@ -5190,7 +5183,7 @@
   "icon": "000003E300004AEE",
   "skills": [
    {
-    "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier I or II animal unit when it's created and at the start of your next 2 <turn></turn> Turns.<br></br><br></br>Cannot be used in Water battles.",
+    "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier II-III Animal <hyperlink>Unit</hyperlink> at the start of your next 2 <turn></turn> <hyperlink>Turns</hyperlink>. Lasts 3 <turn></turn> <hyperlink>Turns</hyperlink>.<br></br>Cannot be used in Water combats.<br></br>Summoned Units:<bulletlist><bullet>Ape - 10%</bullet><bullet>Elephant - 10%</bullet><bullet>Brown Bear - 10%</bullet><bullet>Warg - 10%</bullet><bullet>Nightmare - 10%</bullet><bullet>Mammoth - 10%</bullet><bullet>Pestilence Crocodile - 10%</bullet><bullet>Sabertooth - 10%</bullet><bullet>Goretusk Matriarch - 10%</bullet><bullet>Spirit Woolf - 10%</bullet></bulletlist>",
     "name": "Totem of the Wild",
     "spell_slug": "totem_of_the_wild",
     "tier": 5,
@@ -5211,7 +5204,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>Choose a Tier III or Tier IV Animal unit to add to your army.</bullet><bullet>The available Animals depend on the type of terrain the spell is cast on.</bullet></bulletlist>",
+    "description": "Summons a random Tier III-IV Animal <hyperlink>Unit</hyperlink> onto target location under your control, depending on the terrain.",
     "name": "Call Greater Animal",
     "spell_slug": "call_greater_animal",
     "tier": 5,
@@ -5424,7 +5417,7 @@
     "name": "Summon Copper Golem",
     "spell_slug": "summon_copper_golem",
     "tier": 1,
-    "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
+    "type": "<hyperlink>Unit</hyperlink>"
    },
    {
     "description": "Grants enchanted units:<bulletlist><bullet>+ <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>When entering <hyperlink>Defense Mode</hyperlink>, this unit and all adjacent allies receive + <resistance></resistance> <hyperlink>Resistance</hyperlink> until the start of the next turn.</bullet></bulletlist>",
@@ -5452,7 +5445,7 @@
   "icon": "000003BD00002DFC",
   "skills": [
    {
-    "description": "Units in target army heal 25<hyperlink><hp></hp> Hit Points</hyperlink>.",
+    "description": "<hyperlink>Units</hyperlink> in target <hyperlink>Army</hyperlink> heal 25% out of total amount of their <hyperlink><hp></hp> Hit Points</hyperlink>.",
     "name": "Army Heal",
     "spell_slug": "army_heal",
     "tier": 2,
@@ -5514,7 +5507,7 @@
    {
     "description": "In a -hex radius:<bulletlist><bullet>Enemy units sustain <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Enemy units gain 2 Burning for <turn></turn> Turns.</bullet><bullet>Hexes are set <hyperlink>On Fire</hyperlink>.</bullet></bulletlist>",
     "name": "Flame Volley",
-    "spell_slug": "flame_volley",
+    "spell_slug": "might_of_the_battlefield",
     "tier": 5,
     "type": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>"
    },

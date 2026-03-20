@@ -739,7 +739,7 @@
   "group_name": "Dragon Lord - Hero Skill Group",
   "icon": "0000048D00000F3B",
   "type": "normal",
-  "name": "Defensive Swipe",
+  "name": "Dragon Swipe",
   "tree_pos_x": 400.0,
   "id": "hs_defensive_swipe",
   "excluded_skills": [
@@ -751,7 +751,7 @@
   "tree_name": "Dragon Lord",
   "tree_pos_y": 150.0,
   "DLC": "DRAGONLORDS ",
-  "description": "The Tail Swipe ability now:<bulletlist><bullet>Inflicts guaranteed 2x Weakened for 3<turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Makes this unit enter <hyperlink>Defense Mode</hyperlink>.</bullet></bulletlist>",
+  "description": "The Tail Swipe ability now:<bulletlist><bullet>Inflicts guaranteed 2 Weakened for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Deals damage in circle with reduced damage to adjacent units.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4273492487179
@@ -1417,7 +1417,7 @@
   "resid": 4995046967482,
   "tree_name": "<classDeathknight></classDeathknight> Death Knight",
   "tree_pos_y": 350.0,
-  "description": "Modify and enhance Curse:<bulletlist><bullet>Curse now deals 30<damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> .</bullet><bullet>Curse gains 120% base chance of inflicting Frozen for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+  "description": "Modify and enhance Curse:<bulletlist><bullet>Curse now deals 28<damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> .</bullet><bullet>Curse gains 120% base chance of inflicting Frozen for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967479
@@ -1607,7 +1607,7 @@
   "resid": 4995046967450,
   "tree_name": "<classDeathknight></classDeathknight> Death Knight",
   "tree_pos_y": 650.0,
-  "description": "Gain:<bulletlist><bullet>Vicious Killer</bullet><bullet>Willbreaker</bullet></bulletlist>",
+  "description": "When this unit kills, all enemy <hyperlink>Units</hyperlink> in 2-hex radius suffer:<bulletlist><bullet>2 Weakened.</bullet><bullet>2 Remorse.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967447
@@ -1654,7 +1654,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 350.0,
   "id": "hs_death_knight_vigor_ii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+20 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046967438
@@ -1671,7 +1671,7 @@
   "tree_pos_x": 500.0,
   "tree_pos_y": 250.0,
   "id": "hs_death_knight_vigor_i",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+10 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046967417
@@ -1705,7 +1705,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 250.0,
   "id": "hs_death_knight_fighting_i",
-  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage.",
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +5% damage.",
   "required_skills": [
    {
     "resid": 4995046967417
@@ -2107,7 +2107,7 @@
   "resid": 5003636903814,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 650.0,
-  "description": "While in <hyperlink>Defense Mode</hyperlink>, this unit gains Charge Resistance.",
+  "description": "This unit has 30% base chance aplying Stunned with melee attacks.<br></br>While in Defense Mode, this unit gains Charge Resistance. ",
   "required_skills": [
    {
     "resid": 5003636902934
@@ -2124,7 +2124,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_graceful_defense",
-  "description": "Gain +1 Grace on entering <hyperlink>Defense Mode</hyperlink>.",
+  "description": "This unit gains +2 Grace on entering Defense Mode.",
   "required_skills": [
    {
     "resid": 5003636902803
@@ -2198,7 +2198,7 @@
   "resid": 5003636903785,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 350.0,
-  "description": "Modify and enhance Pushing Attack:<bulletlist><bullet>Pushing Attack now displaces and replaces.</bullet><bullet>Pushing Attack now deals 40 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> base.</bullet></bulletlist>",
+  "description": "Modify and enhance Pushing Attack:<bulletlist><bullet>Pushing Attack now displaces and replaces.</bullet><bullet>Pushing Attack now deals 30 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> base.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636903775
@@ -2217,7 +2217,7 @@
   "resid": 5003636903775,
   "tree_name": "<classDefender></classDefender> Defender",
   "name": "Pushing Attack",
-  "tree_pos_x": 100.0,
+  "tree_pos_x": 123.0,
   "tree_pos_y": 250.0,
   "id": "hs_defender_pushing_attack",
   "required_skills": [
@@ -2226,6 +2226,9 @@
    },
    {
     "resid": 5003636902729
+   },
+   {
+    "resid": 5003636902849
    }
   ]
  },
@@ -2251,11 +2254,11 @@
   "type": "normal",
   "resid": 5003636902934,
   "tree_name": "<classDefender></classDefender> Defender",
-  "name": "Weakening Strikes",
+  "name": "Disrupting Weakening",
   "tree_pos_x": 550.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_weakening_strikes",
-  "description": "Unit's attacks gain:<bulletlist><bullet>A base 90% chance of inflicting Weakened.</bullet></bulletlist><br></br>This effect is increased for <hyperlink>Retaliation Attacks</hyperlink>.",
+  "description": "This unit's attacks gain:<bulletlist><bullet>Base 90% chance of inflicting Weakening Aura for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Base 90% chance of inflicting Disrupted for 2 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>These effects are increased to 120% base for <hyperlink>Retaliation Attacks</hyperlink>.",
   "required_skills": [
    {
     "resid": 4514010632878
@@ -2388,7 +2391,7 @@
   "resid": 5003636902874,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 650.0,
-  "description": "+30 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+45 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636903809
@@ -2408,7 +2411,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_vigor_ii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+30 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636902843
@@ -2428,7 +2431,7 @@
   "tree_pos_x": 200.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_fighting_i",
-  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage.",
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +5% damage.",
   "required_skills": [
    {
     "resid": 5003636902803
@@ -2450,7 +2453,7 @@
   "resid": 5003636902868,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 650.0,
-  "description": "<hyperlink>Melee</hyperlink> attacks gain +20% damage.",
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage.",
   "required_skills": [
    {
     "resid": 5003636902871
@@ -2467,10 +2470,10 @@
   "resid": 5003636902849,
   "tree_name": "<classDefender></classDefender> Defender",
   "name": "Resistance",
-  "tree_pos_x": 200.0,
+  "tree_pos_x": 177.0,
   "tree_pos_y": 250.0,
   "id": "hs_defender_resistance_i",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636902729
@@ -2490,7 +2493,7 @@
   "tree_pos_x": 350.0,
   "tree_pos_y": 350.0,
   "id": "hs_defender_resistance_ii",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636902723
@@ -2510,7 +2513,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 450.0,
   "id": "hs_defender_resistance_iii",
-  "description": "<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+3<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636902846
@@ -2530,7 +2533,7 @@
   "tree_pos_x": 200.0,
   "tree_pos_y": 450.0,
   "id": "hs_defender_defense_iii",
-  "description": "<bulletlist><bullet>+2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+10% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+3 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+5% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636903795
@@ -2550,7 +2553,7 @@
   "tree_pos_x": 250.0,
   "tree_pos_y": 350.0,
   "id": "hs_defender_defense_ii",
-  "description": "<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+5% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+5% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636902849
@@ -2757,6 +2760,9 @@
   "abilities": [
    {
     "slug": "0000041b0000184d"
+   },
+   {
+    "slug": "0000041b0000184d"
    }
   ],
   "resid": 4514010633981,
@@ -2931,7 +2937,7 @@
   "resid": 5003636903958,
   "tree_name": "<classWarrior></classWarrior> Warrior",
   "tree_pos_y": 650.0,
-  "description": "Gain:<bulletlist><bullet>Vicious Killer</bullet><bullet>Willbreaker</bullet></bulletlist>",
+  "description": "When this unit kills, all enemy <hyperlink>Units</hyperlink> in 2-hex radius suffer:<bulletlist><bullet>2 Weakened.</bullet><bullet>2 Remorse.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636903929
@@ -3216,7 +3222,7 @@
   "tree_pos_x": 450.0,
   "tree_pos_y": 550.0,
   "id": "hs_warrior_vigor_iii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+20 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046965982
@@ -3236,7 +3242,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 450.0,
   "id": "hs_warrior_vigor_ii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+10 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046965967
@@ -3256,7 +3262,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 250.0,
   "id": "hs_warrior_vigor_i",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+10 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046965971
@@ -3296,7 +3302,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 250.0,
   "id": "hs_warrior_fighting_i",
-  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage.",
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +5% damage.",
   "required_skills": [
    {
     "resid": 4995046965942
@@ -4405,6 +4411,27 @@
   "tree_pos_y": 50.0
  },
  {
+  "abilities": [
+   {
+    "slug": "star_purge_ability_hs_mage_arcane_strength"
+   }
+  ],
+  "resid": 5003636903113,
+  "id": "hs_mage_arcane_strength",
+  "group_name": "Mage - Hero Skill Group",
+  "icon": "0000048D00000CCE",
+  "type": "normal",
+  "name": "Arcane Purge",
+  "required_skills": [
+   {
+    "resid": 5003636903119
+   },
+   {
+    "resid": 5003636903109
+   }
+  ]
+ },
+ {
   "group_name": "Mage - Hero Skill Group",
   "icon": "0000048D00000C59",
   "type": "normal",
@@ -4414,7 +4441,7 @@
   "tree_pos_x": 50.0,
   "tree_pos_y": 350.0,
   "id": "hs_mage_resistance_i",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680233952
@@ -5431,7 +5458,7 @@
   "tree_pos_x": 450.0,
   "tree_pos_y": 250.0,
   "id": "hs_ranger_defense_ii",
-  "description": "<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+10% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+10% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046966666
@@ -5855,7 +5882,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 450.0,
   "id": "hs_ranger_kill_shot",
-  "description": "Killing an enemy unit resets all ability cooldowns. Can only trigger once per turn.",
+  "description": "Killing an enemy unit reduces all active abilities cooldowns by 1 <turn></turn> <hyperlink>Turn</hyperlink>. Can only trigger once per turn.",
   "required_skills": [
    {
     "resid": 4995046966479
@@ -6663,6 +6690,9 @@
   "abilities": [
    {
     "slug": "wizard_king_channeling_ritual_(defensive)_ability_hs_defensive_ritual"
+   },
+   {
+    "slug": "0000048d000006b0"
    }
   ],
   "resid": 5111011084984,
@@ -7485,6 +7515,11 @@
    }
   ],
   "resid": 4514010634590,
+  "excluded_skills": [
+   {
+    "resid": 4514010634081
+   }
+  ],
   "id": "hs_keepers_mark",
   "group_name": "Affinity Hero Skill Group",
   "icon": "0000041B0000195F",
@@ -7542,6 +7577,11 @@
    }
   ],
   "resid": 4514010634081,
+  "excluded_skills": [
+   {
+    "resid": 4514010634590
+   }
+  ],
   "id": "hs_eternal_one",
   "group_name": "Affinity Hero Skill Group",
   "icon": "0000041B00001762",
@@ -8880,19 +8920,23 @@
   "group_name": "Eldritch Sovereign - Hero Skill Group",
   "icon": "0000049700000C09",
   "type": "normal",
+  "abilities": [
+   {
+    "slug": "hs_sprint_ability_hs_quickening_ritual"
+   }
+  ],
   "resid": 5046586575880,
   "tree_name": "Eldritch Sovereign",
   "name": "Quickening Ritual",
   "tree_pos_x": 350.0,
   "tree_pos_y": 250.0,
   "id": "hs_quickening_ritual",
-  "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Gain 20% evasion against <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583198
    }
-  ]
+  ],
+  "DLC": "ELDRITCHREALMS "
  },
  {
   "group_name": "Eldritch Sovereign - Hero Skill Group",
@@ -10867,11 +10911,14 @@
   "abilities": [
    {
     "slug": "0000049700002f03"
+   },
+   {
+    "slug": "000003e300004a40"
    }
   ],
   "resid": 5046586584828,
   "tree_name": "Vampire",
-  "name": "Vampiric Flight",
+  "name": "Undying Vampire",
   "tree_pos_x": 200.0,
   "tree_pos_y": 450.0,
   "id": "hs_vampiric_flight",
@@ -10923,7 +10970,7 @@
   "tree_name": "Vampire",
   "tree_pos_y": 250.0,
   "DLC": "THRONESOFBLOOD ",
-  "description": "Your <hyperlink>Blood Drain</hyperlink> ability ignores <defense></defense> <hyperlink>Defense</hyperlink> and <resistance></resistance> <hyperlink>Resistance</hyperlink> from units suffering from Bleeding or Blood Parasite.",
+  "description": "This unit has:<bulletlist><bullet>Your abilities ignores 50% <defense></defense> <hyperlink>Defense</hyperlink> and 50% <resistance></resistance> <hyperlink>Resistance</hyperlink> on units suffering from Bleeding or Blood Parasite.</bullet><bullet>-1 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink> and -1 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586584735
@@ -10967,7 +11014,7 @@
   "tree_name": "Vampire",
   "tree_pos_y": 250.0,
   "DLC": "THRONESOFBLOOD ",
-  "description": "Reduce the cooldown of your <hyperlink>Blood Drain</hyperlink> ability by 1 <turn></turn> Turn.",
+  "description": "This unit has:<bulletlist><bullet>-20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>The cooldowns of your non-summoning abilities reduced by 1 <turn></turn> <hyperlink>Turn</hyperlink> (to minimum of 1 <turn></turn> <hyperlink>Turn</hyperlink>).</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586584735
@@ -10988,7 +11035,7 @@
   "tree_pos_y": 350.0,
   "id": "hs_deep_bond",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Drain Familiar also grants the targeted unit 3 Regeneration and the heal is increased to 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Drain Familiar also grants the targeted unit Invulnerable for 1 <turn></turn> <hyperlink>Turn</hyperlink> and the caster's heal is increased to 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586584783
@@ -11106,7 +11153,7 @@
   "tree_pos_y": 150.0,
   "id": "hs_staggering_bite",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Draining Bite removes <hyperlink>Defense Mode</hyperlink> and <hyperlink>Retaliation Attacks</hyperlink> unless the target has Charge Resistance.",
+  "description": "Draining Bite ability gain a charge attack bonuses:<bulletlist><bullet>Gains +15% damage per hex traveled, up to 6 hexes.</bullet><bullet>Cancels Defense Mode.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist><br></br>Does not affect units with Charge Resistance.",
   "required_skills": [
    {
     "resid": 5046586584708
@@ -11192,7 +11239,7 @@
   "tree_pos_x": 650.0,
   "tree_pos_y": 450.0,
   "id": "hs_spellblade_vigor_ii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+30 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5111011085284
@@ -11637,7 +11684,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 550.0,
   "id": "hs_spellblade_resistance_ii",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5111011085248
@@ -11657,7 +11704,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 450.0,
   "id": "hs_spellblade_resistance_i",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5111011085279
@@ -11775,23 +11822,6 @@
  },
  {
   "group_name": "Spellblade - Hero Skill Group",
-  "icon": "000004A600000BA9",
-  "type": "normal",
-  "resid": 5111011085224,
-  "tree_name": "<classSpellblade></classSpellblade> Spellblade",
-  "name": "Spell Penetration",
-  "tree_pos_x": 150.0,
-  "tree_pos_y": 350.0,
-  "id": "hs_spellblade_spell_penetration",
-  "description": "All attacks ignore 1 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
-  "required_skills": [
-   {
-    "resid": 5111011085218
-   }
-  ]
- },
- {
-  "group_name": "Spellblade - Hero Skill Group",
   "icon": "000004BB0000000C",
   "type": "normal",
   "resid": 5111011085223,
@@ -11800,7 +11830,7 @@
   "tree_pos_x": 50.0,
   "tree_pos_y": 350.0,
   "id": "hs_spellblade_wildfire",
-  "description": "Base attacks gain:<bulletlist><bullet>2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to the target and adjacent enemies.</bullet><bullet>60% base chance of inflicting Burning on the target and adjacent enemies.</bullet></bulletlist><br></br><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Base attacks gain:<bulletlist><bullet>4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to the target and adjacent enemies.</bullet><bullet>60% base chance of inflicting Burning on the target and adjacent enemies.</bullet></bulletlist><br></br><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "required_skills": [
    {
     "resid": 5111011085215
@@ -11913,7 +11943,7 @@
   "resid": 5111011085207,
   "tree_name": "<classSpellblade></classSpellblade> Spellblade",
   "tree_pos_y": 150.0,
-  "description": "Modify and enhance this hero's Evocation:<bulletlist><bullet>Fire Evocation now deals 24<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Lightning Evocation now deals 27<damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Modify and enhance this hero's Evocation:<bulletlist><bullet>Fire Evocation now deals 26<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Lightning Evocation now deals 24<damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5111011085187
@@ -12147,7 +12177,7 @@
   "tree_pos_x": 50.0,
   "tree_pos_y": 450.0,
   "id": "hs_warlock_willbreaker",
-  "description": "Gain:<bulletlist><bullet>Vicious Killer</bullet><bullet>Willbreaker</bullet></bulletlist>",
+  "description": "When this unit kills, all enemy <hyperlink>Units</hyperlink> in 2-hex radius suffer:<bulletlist><bullet>2 Weakened.</bullet><bullet>2 Remorse.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234837
@@ -12720,7 +12750,7 @@
   "tree_pos_x": 450.0,
   "tree_pos_y": 450.0,
   "id": "hs_warlock_resistance_i",
-  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234858
@@ -13065,7 +13095,7 @@
   "tree_pos_y": 550.0,
   "id": "hs_battlesaint_defense_ii",
   "DLC": "ARCHONPROPHECY ",
-  "description": "<bulletlist><bullet>+2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+10% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+3 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+5% <hyperlink>Evasion</hyperlink></bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234395

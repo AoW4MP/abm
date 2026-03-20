@@ -236,7 +236,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -20% less <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge.</bullet><bullet><white>Renown level 4</white><br></br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <farm></farm> <hyperlink>Farm</hyperlink> grants +2 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -20% less <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge.</bullet><bullet><white>Renown level 4</white><br></br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>, <influence></influence> <hyperlink>Imperium</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit.</bullet></bulletlist>",
   "icon": "0000048D00000DDD"
  },
  {
@@ -452,7 +452,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit.</bullet><bullet><white>Renown level 3</white><br></br>Tier I and II <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet><bullet><white>Renown level 4</white><br></br>Tier III, IV and V <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Units cost -10% less <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink> and <influence></influence> <hyperlink>Imperium</hyperlink> to recruit.</bullet><bullet><white>Renown level 3</white><br></br>Tier I and II <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet><bullet><white>Renown level 4</white><br></br>Tier III, IV and V <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet></bulletlist>",
   "icon": "0000048D00000B03"
  }
 ]
