@@ -120,7 +120,7 @@
   "id": "sign_of_the_vanguard",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Unit has:<bulletlist><bullet>Very Fast Movement in combat.</bullet><bullet><hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks against this unit have -20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet><hyperlink>Melee</hyperlink> attacks deal -20% damage.</bullet></bulletlist>",
+  "description": "Unit has:<bulletlist><bullet>Very Fast Movement in combat.</bullet><bullet><hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks against this unit have -20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet><hyperlink>Melee</hyperlink> attacks deal -20% damage.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShock></unitShock> Shock Unit"
@@ -226,7 +226,7 @@
   "id": "sign_of_the_huntress",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "<hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks have +30% damage and -1<hyperlink><range></range>Range</hyperlink>.",
+  "description": "<hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks have +30% damage and -1<hyperlink><range></range>Range</hyperlink>.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -423,7 +423,7 @@
   "id": "commanders_call",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain 10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain 15 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>",
   "name": "Commander's Call",
   "operation_point_cost": 20,
   "icon": "0000049700003787"
@@ -516,7 +516,7 @@
   ]
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "20<mana></mana> ",
   "resid": 5046586586779,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "sandstorm",
@@ -563,7 +563,7 @@
   "id": "dunestalkers",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Target race becomes one with the desert, granting them:<bulletlist><bullet>Sand Walk</bullet><bullet>Sand Camouflage</bullet><bullet>When on <hyperlink>Sand</hyperlink> terrain gain:<bulletlist></bullet><bullet>Very Fast Movement in combat.</bullet><bullet>+20% <hyperlink><flank></flank> Flanking</hyperlink> damage.</bulltlist></bulltlist></bullet>",
+  "description": "Target race becomes one with the desert, granting them:<bulletlist><bullet>Sand Walk</bullet><bullet>Sand Camouflage</bullet><bullet>When on <hyperlink>Sand</hyperlink> terrain gain:<bulletlist></bullet><bullet>Very Fast Movement in combat.</bullet><bullet>+20% <hyperlink><flank></flank> Flanking</hyperlink> damage.</bullet></bulletlist></bulletlist>",
   "name": "Dunestalkers",
   "operation_point_cost": 250,
   "icon": "0000049700003662"
@@ -685,7 +685,7 @@
   "id": "tormenting_projectiles",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "<hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Have a base 90% chance of inflicting Torment until the end of combat.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "<hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Have a base 90% chance of inflicting Torment until the end of combat.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -838,7 +838,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "blooming_projectiles",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Gain a base 60% chance of inflicting Life Seed for 3 <turn></turn> Turns.</bullet><bullet>Deal +10% damage against Decaying units.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Gain a base 60% chance of inflicting Life Seed for 3 <turn></turn> Turns.</bullet><bullet>Deal +10% damage against Decaying units.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -1439,7 +1439,7 @@
   "id": "accursed_projectiles",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "<hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal +1 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>Inflict Ghostfire for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "<hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal +1 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>Inflict Ghostfire for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -1842,7 +1842,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "obsidian_weapons",
   "tactical": false,
-  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Missile</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -2037,7 +2037,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "purging_arrows",
   "tactical": false,
-  "description": "Grants base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>+10% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Grants base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>+10% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -2799,7 +2799,7 @@
   "id": "living_shadows",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "Wreathes target race in swirling shadows, granting them:<bulletlist><bullet>+10% <hyperlink>Evasion</hyperlink>.</bullet><bullet>When attacked from within 2 hexes the attacker has a base 60% chance of becoming Blind for 1<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+  "description": "Wreathes target race in swirling shadows, granting them:<bulletlist><bullet>+10% <hyperlink>Evasion</hyperlink>.</bullet><bullet>When attacked by an enemy from within 2 hexes, the attacker has a base 60% chance of becoming Blind for 1<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
   "name": "Living Shadows",
   "operation_point_cost": 250,
   "icon": "0000049000000F4E"
@@ -2915,7 +2915,7 @@
   "id": "swiftstrike_blessing",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "Target friendly unit that has action points remaining and another within 3 hexes gain:<bulletlist><bullet>Empowering Momentum for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Fortune for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly unit that has action points remaining and another within 3 hexes gain:<bulletlist><bullet>Momentum for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Fortune for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
   "name": "Swiftstrike Blessing",
   "operation_point_cost": 15,
   "icon": "0000048D00001D62"
@@ -3942,7 +3942,7 @@
   "id": "disrupting_blades",
   "DLC": "EMPIRESANDASHES ",
   "tactical": false,
-  "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>A base 60% chance of inflicting Disrupted for 2 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>Effects are increased for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>A base 60% chance of inflicting Disrupted for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>Effects are increased for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -4186,7 +4186,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "flash_freeze",
   "tactical": false,
-  "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy <hyperlink>Units</hyperlink> in the Province suffer:<bulletlist></bullet><bullet>20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-5 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><bullet>The province gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>The province loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Fungus Fields</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target Province:<bulletlist><bullet>Enemy Units in the Province suffer:<bulletlist></bullet><bullet>20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Enemies have -3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><bullet>The province gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>The province loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Fungus Fields</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Flash Freeze",
   "operation_point_cost": 100,
   "icon": "0000041B00001764"
@@ -4742,14 +4742,14 @@
   ]
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "150<mana></mana> ",
   "resid": 4514010634152,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "sleep_of_oblivion",
   "tactical": true,
   "description": "Target non-Hero unit dies. After 2 <turn></turn> Turns, they come back to life with 75% of their total <hyperlink><hp></hp> Hit Points</hyperlink> and are inflicted with Insanity.<br></br><br></br>While dead this way the unit cannot be revived or have its corpse destroyed.",
   "name": "Sleep of Oblivion",
-  "operation_point_cost": 40,
+  "operation_point_cost": 50,
   "icon": "0000041B0000174F"
  },
  {
@@ -5253,7 +5253,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "seeker_arrows",
   "tactical": false,
-  "description": "Grants <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>+1<hyperlink><range></range>Range</hyperlink>.</bullet></bulletlist>",
+  "description": "Grants <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>+1<hyperlink><range></range>Range</hyperlink>.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -5321,7 +5321,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_wind_rager",
   "tactical": false,
-  "description": "Summon a <hyperlink>Wind Rager</hyperlink>, a fast and disruptive Fighter Unit",
+  "description": "Summon a <hyperlink>Wind Rager</hyperlink>, a fast and disruptive Magic Fighter Unit",
   "name": "Summon Wind Rager",
   "operation_point_cost": 100,
   "icon": "0000041B00000FD8",
@@ -5412,7 +5412,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "awaken_the_forest",
   "tactical": false,
-  "description": "Target Province with Forest:<bulletlist><bullet>Loses Forest.</bullet><bullet>An Army of Plant <hyperlink>Units</hyperlink> is summoned under your control.<br></br><br></br>Summoned Units:<bulletlist></bullet><bullet>Entwined Protector - 34%</bullet><bullet>Entwined Scourge - 34%</bullet><bullet>Nymph - 29%</bullet><bullet>Horned God - 3%</bullet></bulletlist>",
+  "description": "Target Province with Forest:<bulletlist><bullet>Loses Forest.</bullet><bullet>An Army of Plant <hyperlink>Units</hyperlink> is summoned under your control.<br></br><br></br>Summoned Units:<bulletlist></bullet><bullet><hyperlink>Entwined Protector</hyperlink> - 34%</bullet><bullet><hyperlink>Entwined Scourge</hyperlink> - 34%</bullet><bullet><hyperlink>Nymph</hyperlink> - 29%</bullet><bullet><hyperlink>Horned God</hyperlink> - 3%</bullet></bulletlist>",
   "name": "Awaken the Forest",
   "operation_point_cost": 400,
   "icon": "000003E30000523A",
@@ -5558,7 +5558,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "poison_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain base 60% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain base 60% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -5594,14 +5594,14 @@
   "icon": "0000041B00000B64"
  },
  {
-  "casting_cost": "450<mana></mana> ",
+  "casting_cost": "350<mana></mana> ",
   "resid": 4514010631313,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "scion_of_flame",
   "tactical": false,
   "description": "Makes the target race the embodiment of fire, granting them:<bulletlist><bullet>4 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>.</bullet><bullet>Vengeful Flames, which damages <hyperlink>Melee</hyperlink> attackers.</bullet><bullet>Fiery Wake, which ignites flammable terrain such as <hyperlink>Flora Obstacles</hyperlink>.</bullet><bullet>Immunity to Burning.</bullet><bullet>Lava Walk.</bullet><bullet><hyperlink>Cities</hyperlink> of this race ignore the <happiness></happiness> <hyperlink>City Stability</hyperlink> penalty from Chasm and Lava in their <hyperlink>Domain</hyperlink>.</bullet></bulletlist>",
   "name": "Scion of Flame",
-  "operation_point_cost": 450,
+  "operation_point_cost": 350,
   "icon": "0000041B00000C3D"
  },
  {
@@ -6020,7 +6020,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "totem_of_the_wild",
   "tactical": true,
-  "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier II-III Animal <hyperlink>Unit</hyperlink> at the start of your next 2 <turn></turn> <hyperlink>Turns</hyperlink>. Lasts 3 <turn></turn> <hyperlink>Turns</hyperlink>.<br></br>Cannot be used in Water combats.<br></br>Summoned Units:<bulletlist><bullet>Ape - 10%</bullet><bullet>Elephant - 10%</bullet><bullet>Brown Bear - 10%</bullet><bullet>Warg - 10%</bullet><bullet>Nightmare - 10%</bullet><bullet>Mammoth - 10%</bullet><bullet>Pestilence Crocodile - 10%</bullet><bullet>Sabertooth - 10%</bullet><bullet>Goretusk Matriarch - 10%</bullet><bullet>Spirit Woolf - 10%</bullet></bulletlist>",
+  "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier II-III Animal <hyperlink>Unit</hyperlink> at the start of your next 2 <turn></turn> <hyperlink>Turns</hyperlink>. Lasts 3 <turn></turn> <hyperlink>Turns</hyperlink>. Cannot be used in Water combats.<br></br>Summoned Units:<bulletlist><bullet>Ape - 10%</bullet><bullet>Elephant - 10%</bullet><bullet>Brown Bear - 10%</bullet><bullet>Warg - 10%</bullet><bullet>Nightmare - 10%</bullet><bullet>Mammoth - 10%</bullet><bullet>Pestilence Crocodile - 10%</bullet><bullet>Sabertooth - 10%</bullet><bullet>Goretusk Matriarch - 10%</bullet><bullet>Spirit Woolf - 10%</bullet></bulletlist>",
   "name": "Totem of the Wild",
   "operation_point_cost": 40,
   "summoned_units": [
@@ -6754,7 +6754,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "frost_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6773,7 +6773,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "amplified_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Deal 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to 2 other targets within 2 hexes.</bullet><bullet>Have a base 30% chance of inflicting Sundered Resistance on each target hit for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Deal 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to 2 other targets within 2 hexes.</bullet><bullet>Have a base 30% chance of inflicting Sundered Resistance on each target hit for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6792,7 +6792,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "fiery_projectiles",
   "tactical": false,
-  "description": "Base <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Base <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6864,14 +6864,14 @@
   "icon": "0000041B000019BF"
  },
  {
-  "casting_cost": "300<mana></mana> ",
+  "casting_cost": "250<mana></mana> ",
   "resid": 4273492484483,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "ascended_warriors",
   "tactical": false,
   "description": "Non-Hero units in target army gain 1 Rank.<br></br><br></br>Cannot promote units above Legendary rank.",
   "name": "Ascended Warriors",
-  "operation_point_cost": 300,
+  "operation_point_cost": 250,
   "icon": "000003E300006176"
  },
  {
@@ -7568,7 +7568,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "natures_bounty",
   "tactical": false,
-  "description": "All friendly units in the target Province gain +15 max <hyperlink><hp></hp> Hit Points</hyperlink> and <hyperlink>regenerate</hyperlink> 15 <hyperlink><hp></hp> Hit Points</hyperlink> in neutral and friendly domain for the next 2 <hyperlink>World Map</hyperlink> <turn></turn> Turns.",
+  "description": "All friendly <hyperlink>Units</hyperlink> in the target Province for 3 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turns</hyperlink> gain:<bulletlist><bullet>+15 max <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>+2 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>.</bullet><bullet>Regenerate 15 <hyperlink><hp></hp> Hit Points</hyperlink> in neutral and friendly domains.</bullet></bulletlist>",
   "name": "Nature's Bounty",
   "operation_point_cost": 120,
   "icon": "0000041B00000DBB"
@@ -8294,14 +8294,14 @@
   "icon": "0000041300000D0E"
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4264902530326,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "steelfury_chant",
   "tactical": true,
   "description": "All friendly units lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
   "name": "Steelfury Chant",
-  "operation_point_cost": 20,
+  "operation_point_cost": 25,
   "icon": "0000041B00000115"
  },
  {

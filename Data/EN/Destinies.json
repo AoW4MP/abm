@@ -15,7 +15,7 @@
     "reward_properties": [
      {
       "name": "Rank Slayer",
-      "screen_description": "Deal +10% damage for each rank the target has.",
+      "screen_description": "Deal +5% damage for each rank the target has.",
       "icon": "000004A600000941"
      }
     ]

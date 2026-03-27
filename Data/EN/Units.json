@@ -418,7 +418,7 @@
    }
   ],
   "mp": 40,
-  "hp": 120,
+  "hp": 130,
   "armor": 5,
   "resistance": 3,
   "medal_rewards_2": [
@@ -1069,14 +1069,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "resistances": [
-   {
-    "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Spirit_weakness_4"
-   }
-  ],
+  "resistances": [],
   "status_resistance": 9,
   "upkeep": "60<gold></gold> 20<influence></influence> ",
   "id": "fracture",
@@ -1094,9 +1087,6 @@
    },
    {
     "slug": "00000497000037c6"
-   },
-   {
-    "slug": "000003e300004814"
    },
    {
     "slug": "000003e1000012f7"
@@ -1126,9 +1116,6 @@
   "secondary_passives": [
    {
     "slug": "000004a600000b7a"
-   },
-   {
-    "slug": "000003e300004802"
    },
    {
     "slug": "000003eb00000724"
@@ -1181,14 +1168,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "resistances": [
-   {
-    "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Spirit_weakness_4"
-   }
-  ],
+  "resistances": [],
   "status_resistance": 9,
   "upkeep": "60<gold></gold> 20<influence></influence> ",
   "id": "fracture",
@@ -1206,9 +1186,6 @@
    },
    {
     "slug": "00000497000037c6"
-   },
-   {
-    "slug": "000003e300004814"
    },
    {
     "slug": "000003e1000012f7"
@@ -1238,9 +1215,6 @@
   "secondary_passives": [
    {
     "slug": "000004a600000b7a"
-   },
-   {
-    "slug": "000003e300004802"
    },
    {
     "slug": "000003eb00000724"
@@ -1293,14 +1267,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "resistances": [
-   {
-    "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Spirit_weakness_4"
-   }
-  ],
+  "resistances": [],
   "status_resistance": 9,
   "upkeep": "60<gold></gold> 20<influence></influence> ",
   "id": "fracture",
@@ -1318,9 +1285,6 @@
    },
    {
     "slug": "00000497000037c6"
-   },
-   {
-    "slug": "000003e300004814"
    },
    {
     "slug": "000003e1000012f7"
@@ -1350,9 +1314,6 @@
   "secondary_passives": [
    {
     "slug": "000004a600000b7a"
-   },
-   {
-    "slug": "000003e300004802"
    },
    {
     "slug": "000003eb00000724"
@@ -3375,10 +3336,7 @@
     "slug": "Shock_resistance_2"
    },
    {
-    "slug": "Fire_resistance_2"
-   },
-   {
-    "slug": "Spirit_resistance_6"
+    "slug": "Spirit_resistance_2"
    },
    {
     "slug": "Blight_weakness_4"
@@ -3498,10 +3456,7 @@
     "slug": "Shock_resistance_2"
    },
    {
-    "slug": "Fire_resistance_2"
-   },
-   {
-    "slug": "Spirit_resistance_6"
+    "slug": "Spirit_resistance_2"
    },
    {
     "slug": "Blight_weakness_4"
@@ -4349,6 +4304,9 @@
     "slug": "Physical_resistance_2"
    },
    {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -4618,9 +4576,9 @@
    }
   ],
   "mp": 40,
-  "hp": 80,
+  "hp": 85,
   "armor": 3,
-  "resistance": 1,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -4690,6 +4648,9 @@
     "slug": "Fire_resistance_2"
    },
    {
+    "slug": "Shock_weakness_2"
+   },
+   {
     "slug": "Spirit_weakness_2"
    },
    {
@@ -4741,7 +4702,7 @@
   "mp": 40,
   "hp": 90,
   "armor": 4,
-  "resistance": 3,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -5449,10 +5410,10 @@
   ],
   "resistances": [
    {
-    "slug": "Frost_resistance_6"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_6"
+    "slug": "Fire_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -6531,6 +6492,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -7616,6 +7580,9 @@
     "slug": "Physical_resistance_2"
    },
    {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -7821,6 +7788,9 @@
     "slug": "Physical_resistance_2"
    },
    {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -7924,6 +7894,12 @@
   ],
   "resistances": [
    {
+    "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -8025,6 +8001,9 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -8143,6 +8122,9 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -20295,7 +20277,7 @@
   ],
   "mp": 40,
   "hp": 120,
-  "armor": 4,
+  "armor": 5,
   "resistance": 2,
   "medal_rewards_2": [
    {
@@ -23141,6 +23123,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -23253,6 +23238,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -23353,6 +23341,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -23459,6 +23450,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -23556,6 +23550,9 @@
    },
    {
     "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -24357,9 +24354,9 @@
    }
   ],
   "mp": 40,
-  "hp": 95,
-  "armor": 2,
-  "resistance": 4,
+  "hp": 100,
+  "armor": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -24847,6 +24844,9 @@
     "slug": "Physical_resistance_2"
    },
    {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -24954,6 +24954,9 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -25078,6 +25081,9 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -26786,6 +26792,9 @@
     "slug": "Physical_resistance_2"
    },
    {
+    "slug": "Blight_resistance_2"
+   },
+   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -27642,6 +27651,9 @@
   "combat_speed": 6,
   "primary_passives": [
    {
+    "slug": "000003870000001b"
+   },
+   {
     "slug": "0000041b00001493"
    },
    {
@@ -27663,7 +27675,7 @@
    }
   ],
   "mp": 40,
-  "hp": 110,
+  "hp": 120,
   "armor": 4,
   "resistance": 3,
   "medal_rewards_2": [
@@ -27681,6 +27693,9 @@
    },
    {
     "slug": "0000049300000402"
+   },
+   {
+    "slug": "000003450000052c"
    },
    {
     "slug": "000003e500001adb"
@@ -28143,12 +28158,6 @@
     "slug": "Blight_resistance_4"
    },
    {
-    "slug": "Frost_resistance_2"
-   },
-   {
-    "slug": "Fire_weakness_2"
-   },
-   {
     "slug": "Spirit_weakness_8"
    }
   ],
@@ -28283,7 +28292,7 @@
    }
   ],
   "mp": 40,
-  "hp": 95,
+  "hp": 100,
   "armor": 2,
   "resistance": 4,
   "medal_rewards_2": [
@@ -28437,13 +28446,13 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_4"
+    "slug": "Shock_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Fire_weakness_2"
+    "slug": "Fire_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -28551,16 +28560,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -28674,13 +28677,10 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 6,
@@ -28782,16 +28782,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 1,
@@ -30084,16 +30078,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -30574,6 +30562,9 @@
     "slug": "magic_strike_(base)_ability_000003EC00002919"
    },
    {
+    "slug": "wyvern_burst_ability_000003EC00002919"
+   },
+   {
     "slug": "0000034500000469"
    }
   ],
@@ -31024,23 +31015,16 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
   "upkeep": "30<gold></gold> 10<influence></influence> ",
   "id": "entwined_scourge",
   "name": "Entwined Scourge",
-  "sub_culture_name": "Harmony",
   "combat_speed": 4,
   "primary_passives": [
    {
@@ -31048,9 +31032,6 @@
    },
    {
     "slug": "0000038700001864"
-   },
-   {
-    "slug": "000003eb000006ac"
    }
   ],
   "abilities": [
@@ -31065,7 +31046,7 @@
    }
   ],
   "mp": 40,
-  "hp": 105,
+  "hp": 110,
   "armor": 2,
   "resistance": 4,
   "medal_rewards_2": [
@@ -31142,16 +31123,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 1,
@@ -31179,7 +31154,7 @@
    }
   ],
   "mp": 40,
-  "hp": 55,
+  "hp": 60,
   "armor": 2,
   "resistance": 0,
   "medal_rewards_2": [
@@ -31294,13 +31269,13 @@
   ],
   "abilities": [
    {
-    "slug": "magic_strike_(base)_ability_000003EC00001E55"
-   },
-   {
-    "slug": "putrid_breath_dragon_ability_000003EC00001E55"
+    "slug": "melee_strike_(base)_ability_000003EC00001E55"
    },
    {
     "slug": "tail_swipe_ability_000003EC00001E55"
+   },
+   {
+    "slug": "putrid_breath_dragon_ability_000003EC00001E55"
    },
    {
     "slug": "0000034500000469"
@@ -31308,7 +31283,7 @@
   ],
   "mp": 40,
   "hp": 140,
-  "armor": 6,
+  "armor": 7,
   "resistance": 5,
   "medal_rewards_2": [
    {
@@ -31384,13 +31359,16 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Fire_resistance_6"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Frost_weakness_6"
+    "slug": "Shock_weakness_4"
+   },
+   {
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -31429,7 +31407,7 @@
   "mp": 40,
   "hp": 110,
   "armor": 4,
-  "resistance": 4,
+  "resistance": 6,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -32581,13 +32559,13 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_4"
+    "slug": "Shock_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Fire_weakness_2"
+    "slug": "Fire_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -32692,13 +32670,13 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_2"
+    "slug": "Fire_weakness_4"
    },
    {
     "slug": "Spirit_weakness_4"
@@ -32809,13 +32787,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -32926,13 +32904,13 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_4"
+    "slug": "Shock_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Fire_weakness_2"
+    "slug": "Fire_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -33018,13 +32996,13 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
     "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_2"
+    "slug": "Fire_weakness_4"
    },
    {
     "slug": "Spirit_weakness_4"
@@ -33049,7 +33027,7 @@
    }
   ],
   "mp": 40,
-  "hp": 55,
+  "hp": 65,
   "armor": 6,
   "resistance": 1,
   "medal_rewards_2": [
@@ -33113,10 +33091,10 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_6"
+    "slug": "Shock_resistance_2"
    },
    {
-    "slug": "Blight_weakness_6"
+    "slug": "Fire_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -33230,10 +33208,10 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_6"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Frost_weakness_6"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -33488,8 +33466,8 @@
    }
   ],
   "mp": 40,
-  "hp": 75,
-  "armor": 1,
+  "hp": 80,
+  "armor": 3,
   "resistance": 3,
   "medal_rewards_2": [
    {
@@ -34124,7 +34102,7 @@
   "mp": 40,
   "hp": 160,
   "armor": 6,
-  "resistance": 7,
+  "resistance": 10,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -34604,7 +34582,7 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_4"
+    "slug": "Shock_resistance_2"
    },
    {
     "slug": "Spirit_weakness_2"
@@ -34703,7 +34681,7 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
     "slug": "Blight_weakness_2"
@@ -34802,7 +34780,7 @@
   ],
   "resistances": [
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -35119,10 +35097,10 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_8"
+    "slug": "Shock_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_8"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -35252,10 +35230,10 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_8"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_8"
+    "slug": "Blight_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -35385,7 +35363,7 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Frost_weakness_2"
@@ -37805,9 +37783,6 @@
   ],
   "resistances": [
    {
-    "slug": "Physical_resistance_3"
-   },
-   {
     "slug": "Blight_resistance_4"
    }
   ],
@@ -38252,7 +38227,7 @@
    }
   ],
   "description": "",
-  "cost": "360<unitprod></unitprod> 375<gold></gold> 90<influence></influence> ",
+  "cost": "330<unitprod></unitprod> 300<gold></gold> 60<influence></influence> ",
   "resid": 4273492482999,
   "medal_rewards_3": [
    {
@@ -38261,16 +38236,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_2"
-   },
-   {
     "slug": "Shock_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 8,
@@ -38461,10 +38430,10 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    },
    {
     "slug": "Fire_weakness_4"
@@ -38556,10 +38525,10 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    },
    {
     "slug": "Fire_weakness_4"
@@ -44099,8 +44068,8 @@
    }
   ],
   "mp": 40,
-  "hp": 75,
-  "armor": 1,
+  "hp": 80,
+  "armor": 3,
   "resistance": 3,
   "medal_rewards_2": [
    {
@@ -44262,13 +44231,10 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
     "slug": "Fire_weakness_4"
-   },
-   {
-    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -44317,8 +44283,8 @@
    }
   ],
   "mp": 40,
-  "hp": 150,
-  "armor": 7,
+  "hp": 160,
+  "armor": 5,
   "resistance": 7,
   "medal_rewards_2": [
    {
@@ -44613,10 +44579,10 @@
   ],
   "resistances": [
    {
-    "slug": "Frost_resistance_8"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_8"
+    "slug": "Fire_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -44745,13 +44711,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_6"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_6"
+    "slug": "Shock_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -44781,7 +44747,7 @@
   "mp": 40,
   "hp": 80,
   "armor": 1,
-  "resistance": 4,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -44831,7 +44797,7 @@
    }
   ],
   "description": "",
-  "cost": "200<unitprod></unitprod> 120<gold></gold> ",
+  "cost": "240<unitprod></unitprod> 140<gold></gold> ",
   "resid": 4273492479499,
   "medal_rewards_3": [
    {
@@ -44840,13 +44806,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_6"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_6"
+    "slug": "Shock_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"
@@ -44885,7 +44851,7 @@
   "mp": 40,
   "hp": 110,
   "armor": 3,
-  "resistance": 6,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -44904,6 +44870,9 @@
    },
    {
     "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e500001adb"
    },
    {
     "slug": "000003e3000061c7"
@@ -45357,7 +45326,7 @@
    }
   ],
   "mp": 40,
-  "hp": 110,
+  "hp": 120,
   "armor": 5,
   "resistance": 3,
   "medal_rewards_2": [
@@ -45845,7 +45814,7 @@
    }
   ],
   "mp": 40,
-  "hp": 110,
+  "hp": 130,
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
@@ -46025,10 +45994,10 @@
   ],
   "resistances": [
    {
-    "slug": "Frost_resistance_6"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_6"
+    "slug": "Fire_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -46145,10 +46114,10 @@
   ],
   "resistances": [
    {
-    "slug": "Frost_resistance_6"
+    "slug": "Frost_resistance_2"
    },
    {
-    "slug": "Fire_weakness_6"
+    "slug": "Fire_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -47512,10 +47481,10 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_8"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Frost_weakness_8"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 9,
@@ -47644,13 +47613,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
     "slug": "Frost_weakness_4"

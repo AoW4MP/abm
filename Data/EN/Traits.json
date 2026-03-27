@@ -20,7 +20,7 @@
     "name": "Ruler starts with an Eagle mount."
    }
   ],
-  "enabled": true,
+  "enabled": false,
   "group_name": "Mounts",
   "front_end": true,
   "icon": "000004D000000459",
@@ -528,7 +528,7 @@
     "name": "Gain Flying movement."
    },
    {
-    "name": "Gain +10% <hyperlink>Evasion</hyperlink> against <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks."
+    "name": "Gain +10% <hyperlink>Evasion</hyperlink> against <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks."
    },
    {
     "name": "Additional units become Cavalry"
@@ -1431,7 +1431,7 @@
     "name": "<hyperlink>Routing</hyperlink> <hyperlink>Units</hyperlink> are <hyperlink>Captured</hyperlink> if your side is victorious in <hyperlink>Combat</hyperlink>."
    },
    {
-    "name": "Your racial units has Razor Net."
+    "name": "Your racial units has Razor Net ability."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -2992,10 +2992,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks deal +2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>."
+    "name": "<hyperlink>Melee</hyperlink> and <hyperlink>Missile</hyperlink> attacks deal +2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>."
    },
    {
-    "name": "Single Shot <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks deal +4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>."
+    "name": "Single Shot <hyperlink>Melee</hyperlink> and <hyperlink>Missile</hyperlink> attacks deal +4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -3395,7 +3395,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> on <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks."
+    "name": "+20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> on <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks."
    }
   ],
   "enabled": true,

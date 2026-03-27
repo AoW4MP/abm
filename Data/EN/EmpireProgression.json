@@ -148,7 +148,7 @@
   "category": "Chaos Empire Skill",
   "id": "call_of_chaos",
   "required_xp": 15,
-  "description": "Defeating an Infestation grants you a unit based on the Infestation defeated. Doesn't work on Fractured Infestations.",
+  "description": "Defeating an <hyperlink>Infestation</hyperlink> grants you a unit based on the Infestation defeated.",
   "name": "Call of Chaos",
   "icon": "000003E10000180A",
   "required_level": 1,
