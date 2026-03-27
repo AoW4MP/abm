@@ -31040,6 +31040,7 @@
   "upkeep": "30<gold></gold> 10<influence></influence> ",
   "id": "entwined_scourge",
   "name": "Entwined Scourge",
+  "sub_culture_name": "Harmony",
   "combat_speed": 4,
   "primary_passives": [
    {
