@@ -53,10 +53,10 @@
  {
   "requirement_description": "Requires 4 Lava improvement provinces to unlock.<br></br><br></br>Only 1 Guild allowed per City.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per Lava:</bullet><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income per Lava:</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income per Lava:</bullet><bullet>+1 <influence></influence> <hyperlink>Imperium</hyperlink> income per Lava:</bullet><bullet>+1 <happiness></happiness> <hyperlink>City Stability</hyperlink> income per Lava:</bullet></bulletlist>",
   "resid": 5222680232542,
   "id": "volcanologists_guild",
-  "description": "Per each Lava <hyperlink>Province Feature</hyperlink> in this city's <hyperlink>Domain</hyperlink> gain:<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet></bulletlist>",
+  "description": "Per each Lava <hyperlink>Province Feature</hyperlink> in this city's <hyperlink>Domain</hyperlink> gain:<bulletlist><bullet>+1 <happiness></happiness> <hyperlink>City Stability</hyperlink> income.</bullet><bullet>+1 <influence></influence> <hyperlink>Imperium</hyperlink> income.</bullet><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet></bulletlist>",
   "name": "Volcanologists' Guild",
   "icon": "000004C000000266",
   "is_sector_upgrade": false,
@@ -1725,11 +1725,11 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 <gold></gold> <hyperlink>Gold</hyperlink> income per Special Province Improvement:</bullet><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> income per Special Province Improvement:</bullet><bullet>+1 <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> income per Special Province Improvement:</bullet><bullet>-5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income per Special Province Improvement:</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+5 <gold></gold> <hyperlink>Gold</hyperlink> income per Special Province Improvement:</bullet><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> income per Special Province Improvement:</bullet><bullet>+1 <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> income per Special Province Improvement:</bullet><bullet>-1 <happiness></happiness> <hyperlink>City Stability</hyperlink> income per Special Province Improvement:</bullet></bulletlist>",
   "resid": 4986457030787,
   "id": "extraction_nexus",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Per each <hyperlink>Special Province Improvement</hyperlink>, grants:<bulletlist><bullet>+5 <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>+5 <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> income.</bullet><bullet>-5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income.</bullet></bulletlist>",
+  "description": "Per each <hyperlink>Special Province Improvement</hyperlink>, grants:<bulletlist><bullet>+5 <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>+5 <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> income.</bullet><bullet>-1 <happiness></happiness> <hyperlink>City Stability</hyperlink> income.</bullet></bulletlist>",
   "name": "Extraction Nexus",
   "icon": "0000048900000084",
   "is_sector_upgrade": false
@@ -2146,7 +2146,7 @@
  {
   "requirement_description": "",
   "cost": "450<structureprod></structureprod> 1<embalmedsacrifice></embalmedsacrifice> ",
-  "prediction_description": "<bulletlist><bullet>+40 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet><bullet>+20 <souls></souls> <hyperlink>Soul</hyperlink> income</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+40 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet><bullet>+10 <souls></souls> <hyperlink>Soul</hyperlink> income</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435140196,
   "id": "crypt-temple",
   "description": "",
@@ -2158,7 +2158,7 @@
  {
   "requirement_description": "",
   "cost": "250<structureprod></structureprod> 1<embalmedsacrifice></embalmedsacrifice> ",
-  "prediction_description": "<bulletlist><bullet>+30 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet><bullet>+10 <souls></souls> <hyperlink>Soul</hyperlink> income</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+30 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet><bullet>+5 <souls></souls> <hyperlink>Soul</hyperlink> income</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435140191,
   "id": "grave_obelisk",
   "description": "",
@@ -2692,7 +2692,7 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+40 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+40 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139242,
   "id": "shadowtrade_quarter",
   "description": "",
@@ -2704,7 +2704,7 @@
  {
   "requirement_description": "",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+30 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139237,
   "id": "collector",
   "description": "",
@@ -2879,7 +2879,7 @@
   "prediction_description": "Grants <hyperlink>Herbalist in Domain</hyperlink> to every Friendly <hyperlink>Unit</hyperlink> inside this <hyperlink>Domain</hyperlink>.",
   "resid": 4578435138946,
   "id": "_conduit___herbalist",
-  "description": "Grants:<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> income.</bullet><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>Friendly Armies in this City's Domain regenerate an additional +10 <hyperlink><hp></hp> Hit Point</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Per adjacent <hyperlink>Province</hyperlink> with Forest or Swamp:<bulletlist></bullet><bullet>+7 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist></bulletlist><br></br>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.",
+  "description": "Grants:<bulletlist><bullet>+3 <food></food> <hyperlink>Food</hyperlink> income.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>Friendly Armies in this City's Domain regenerate an additional +10 <hyperlink><hp></hp> Hit Point</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Per adjacent <hyperlink>Province</hyperlink> with Forest or Swamp:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist></bulletlist><br></br>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.",
   "name": "<conduit></conduit> Herbalist",
   "icon": "0000042A00000583",
   "is_sector_upgrade": true
@@ -3153,10 +3153,10 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 <influence></influence> <hyperlink>Imperium</hyperlink> income</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+10 <influence></influence> <hyperlink>Imperium</hyperlink> income</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435138297,
   "id": "overlords_tower",
-  "description": "<bulletlist><bullet>+5 <influence></influence> <hyperlink>Imperium</hyperlink> income</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> income per <hyperlink>Vassal</hyperlink></bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +5 <influence></influence> <hyperlink>Imperium</hyperlink> income.</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +5 <influence></influence> <hyperlink>Imperium</hyperlink> per <hyperlink>Vassal</hyperlink>.</bullet></bulletlist>",
   "name": "Overlord's Tower",
   "icon": "0000042A000002FA",
   "is_sector_upgrade": false

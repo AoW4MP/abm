@@ -441,6 +441,9 @@
     "slug": "000003450000052c"
    },
    {
+    "slug": "000003e300004d61"
+   },
+   {
     "slug": "000003bd000028b7"
    }
   ],
@@ -3191,7 +3194,7 @@
    }
   ],
   "description": "",
-  "cost": "330<unitprod></unitprod> 50<influence></influence> 100<souls></souls> ",
+  "cost": "360<unitprod></unitprod> 90<influence></influence> 100<souls></souls> ",
   "resid": 5222680233241,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -4771,7 +4774,7 @@
    }
   ],
   "description": "",
-  "cost": "330<unitprod></unitprod> 300<gold></gold> 60<influence></influence> ",
+  "cost": "360<unitprod></unitprod> 375<gold></gold> 90<influence></influence> ",
   "resid": 5046586586895,
   "DLC": "RISEFROMRUIN ",
   "medal_rewards_3": [
@@ -5458,7 +5461,7 @@
   "mp": 40,
   "hp": 150,
   "armor": 7,
-  "resistance": 4,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -6475,7 +6478,7 @@
    }
   ],
   "description": "",
-  "cost": "600<unitprod></unitprod> 440<mana></mana> 50<influence></influence> ",
+  "cost": "600<unitprod></unitprod> 440<mana></mana> 100<influence></influence> ",
   "resid": 5046586579764,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -8902,7 +8905,7 @@
    }
   ],
   "description": "",
-  "cost": "680<unitprod></unitprod> 100<influence></influence> 170<souls></souls> ",
+  "cost": "740<unitprod></unitprod> 125<influence></influence> 170<souls></souls> ",
   "resid": 5016521812224,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23106,7 +23109,7 @@
    }
   ],
   "description": "",
-  "cost": "600<unitprod></unitprod> 440<mana></mana> 50<influence></influence> ",
+  "cost": "600<unitprod></unitprod> 440<mana></mana> 100<influence></influence> ",
   "resid": 4986457035638,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -23221,7 +23224,7 @@
    }
   ],
   "description": "",
-  "cost": "280<unitprod></unitprod> 270<mana></mana> 30<influence></influence> ",
+  "cost": "280<unitprod></unitprod> 270<mana></mana> 80<influence></influence> ",
   "resid": 4986457035633,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -27115,6 +27118,9 @@
   ],
   "medal_rewards_6": [
    {
+    "slug": "000003e30000668e"
+   },
+   {
     "slug": "0000048b00000c6e"
    },
    {
@@ -28911,7 +28917,7 @@
    }
   ],
   "mp": 40,
-  "hp": 130,
+  "hp": 170,
   "armor": 5,
   "resistance": 4,
   "medal_rewards_2": [
@@ -28967,7 +28973,7 @@
    }
   ],
   "description": "Close-range Battle Mage unit that excels at exploiting \\<\\<m:{GLOBAL.NegativeStatusEffectConcept.Hyperlink}\\>\\>.",
-  "cost": "280<unitprod></unitprod> 270<mana></mana> 30<influence></influence> ",
+  "cost": "280<unitprod></unitprod> 270<mana></mana> 80<influence></influence> ",
   "resid": 4514010631024,
   "medal_rewards_3": [
    {
@@ -31209,7 +31215,7 @@
    }
   ],
   "description": "",
-  "cost": "680<unitprod></unitprod> 100<influence></influence> 170<souls></souls> ",
+  "cost": "740<unitprod></unitprod> 125<influence></influence> 170<souls></souls> ",
   "resid": 4312147172949,
   "medal_rewards_3": [
    {
@@ -33139,7 +33145,7 @@
   "mp": 40,
   "hp": 150,
   "armor": 7,
-  "resistance": 4,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -33259,7 +33265,7 @@
   "mp": 40,
   "hp": 150,
   "armor": 7,
-  "resistance": 4,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -35465,7 +35471,11 @@
   "id": "zephyr_archer",
   "name": "Zephyr Archer",
   "combat_speed": 5,
-  "primary_passives": [],
+  "primary_passives": [
+   {
+    "slug": "000003eb00000425"
+   }
+  ],
   "abilities": [
    {
     "slug": "shoot_bow_ability_000003E3000064C1"
@@ -35507,6 +35517,9 @@
    }
   ],
   "medal_rewards_6": [
+   {
+    "slug": "0000041b0000151b"
+   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -36396,7 +36409,7 @@
    }
   ],
   "description": "",
-  "cost": "680<unitprod></unitprod> 100<influence></influence> 170<souls></souls> ",
+  "cost": "740<unitprod></unitprod> 125<influence></influence> 170<souls></souls> ",
   "resid": 4273492484118,
   "medal_rewards_3": [
    {
@@ -37089,7 +37102,7 @@
    }
   ],
   "mp": 40,
-  "hp": 80,
+  "hp": 90,
   "armor": 2,
   "resistance": 4,
   "medal_rewards_2": [
@@ -38997,8 +39010,8 @@
    }
   ],
   "mp": 40,
-  "hp": 35,
-  "armor": 2,
+  "hp": 30,
+  "armor": 0,
   "resistance": 0,
   "medal_rewards_2": [
    {
@@ -39084,8 +39097,8 @@
   ],
   "mp": 40,
   "hp": 105,
-  "armor": 1,
-  "resistance": 1,
+  "armor": 2,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -39170,8 +39183,8 @@
   ],
   "mp": 40,
   "hp": 100,
-  "armor": 2,
-  "resistance": 0,
+  "armor": 3,
+  "resistance": 1,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -42627,6 +42640,9 @@
     "slug": "0000048b00000b35"
    },
    {
+    "slug": "000003e1000014ee"
+   },
+   {
     "slug": "00000497000008a7"
    }
   ],
@@ -42639,7 +42655,7 @@
    }
   ],
   "mp": 40,
-  "hp": 100,
+  "hp": 110,
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
@@ -45721,7 +45737,7 @@
   ],
   "mp": 40,
   "hp": 60,
-  "armor": 2,
+  "armor": 0,
   "resistance": 0,
   "medal_rewards_2": [
    {

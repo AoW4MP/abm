@@ -189,6 +189,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
     }
    ]
   },
@@ -276,6 +279,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
     }
    ]
   },
@@ -332,6 +338,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
     }
    ]
   },
@@ -2206,6 +2215,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
     }
    ]
   },

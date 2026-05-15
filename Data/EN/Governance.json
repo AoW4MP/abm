@@ -172,7 +172,7 @@
   "name": "Dragon Governor",
   "level_data": [
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink>",
     "level": 1
    },
    {
@@ -180,7 +180,7 @@
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold",
+    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +3 <gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 3
    },
    {
@@ -188,7 +188,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +3 <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet></bulletlist>",
   "icon": "0000048D00001330"
  },
  {
@@ -220,7 +220,7 @@
   "name": "Champion Governor",
   "level_data": [
    {
-    "effect_description": "Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Each <farm></farm> <hyperlink>Farm</hyperlink> grants +2 <food></food> <hyperlink>Food</hyperlink>",
     "level": 1
    },
    {
@@ -232,7 +232,7 @@
     "level": 3
    },
    {
-    "effect_description": "Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit",
+    "effect_description": "Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>, <influence></influence> <hyperlink>Imperium</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit",
     "level": 4
    }
   ],

@@ -1075,6 +1075,9 @@
    },
    {
     "requisite": "<unitSkirmisher></unitSkirmisher> Skirmisher Unit"
+   },
+   {
+    "requisite": "<unitMagicFighter></unitMagicFighter> Magic Fighter Unit"
    }
   ],
   "name": "Prescient Circlets",
@@ -1244,7 +1247,7 @@
   "id": "summon_lava_runestele",
   "DLC": "GIANTKINGS ",
   "tactical": false,
-  "description": "Summons a Rune Stelle which will terraform <hyperlink>Province</hyperlink> in 2-hex radius near it at random, each <turn></turn> <hyperlink>Turn</hyperlink> into:<bulletlist><bullet>80% - Ashlands Chasm</bullet><bullet>20% - Lava</bullet></bulletlist>",
+  "description": "Summons a Rune Stelle which will terraform <hyperlink>Province</hyperlink> in 2-hex radius near it at random, each <turn></turn> <hyperlink>Turn</hyperlink> into:<bulletlist><bullet>85% - Ashlands Chasm</bullet><bullet>15% - Lava</bullet></bulletlist>",
   "name": "Summon Lava Runestele",
   "operation_point_cost": 80,
   "icon": "00000497000018D1"
@@ -1342,15 +1345,15 @@
   "icon": "0000049700001A52"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 5046586579333,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "dungeon_hazard",
   "DLC": "GIANTKINGS ",
   "tactical": false,
-  "description": "Target enemy army:<bulletlist><bullet>Sustains 15 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>, doubled if cast on a Dungeon <hyperlink>Province</hyperlink>.</bullet><bullet>For 1 <hyperlink>World Map</hyperlink> <turn></turn> Turn, at the start of combat units in this army become Slowed for 3 <turn></turn> Turn.</bullet></bulletlist>",
+  "description": "For 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>, at the start of combat units in this army become Slowed for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
   "name": "Dungeon Hazard",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000049700001931"
  },
  {
@@ -1826,14 +1829,14 @@
   "icon": "0000049700001140"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "150<mana></mana> ",
   "resid": 5046586576591,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "monstrous_rebirth",
   "tactical": true,
-  "description": "Target friendly Tier I, II, or III non-Magic Origin, non-Construct unit:<bulletlist><bullet>Transforms into a <hyperlink>Warbreed</hyperlink>.</bullet><bullet>Heals 60 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Dies at the end of combat.</bullet></bulletlist><br><br></br>Cannot be used in Water Combat.",
+  "description": "Target friendly Tier I, II, or III non-Magic Origin, non-Construct unit:<bulletlist><bullet>Transforms into a <hyperlink>Warbreed</hyperlink>.</bullet><bullet>Heals 60 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Warbreed stays at the end of <hyperlink>Combat</hyperlink>.</bullet></bulletlist><br><br></br>Cannot be used in Water Combat.",
   "name": "Monstrous Rebirth",
-  "operation_point_cost": 30,
+  "operation_point_cost": 50,
   "icon": "0000049700000ECB"
  },
  {
@@ -2128,7 +2131,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "earthshape_ashland",
   "tactical": false,
-  "description": "Target <hyperlink>Province</hyperlink> transformed into:<bulletlist><bullet>80% - Ashlands.</bullet><bullet>20% - Lava.</bullet></bulletlist><br></br>Can target Forest, Grassland, Sand, Snow, Mushroom Forest, Fungus Fields, Cavern Floor.",
+  "description": "Target <hyperlink>Province</hyperlink> transformed into:<bulletlist><bullet>85% - Ashlands.</bullet><bullet>15% - Lava.</bullet></bulletlist><br></br>Can target Forest, Grassland, Sand, Snow, Mushroom Forest, Fungus Fields, Cavern Floor.",
   "name": "Earthshape: Ashland",
   "operation_point_cost": 45,
   "icon": "000004970000066F"
@@ -3629,6 +3632,9 @@
    },
    {
     "slug": "gold_wyvern"
+   },
+   {
+    "slug": "sand_worm"
    }
   ]
  },
@@ -3720,6 +3726,9 @@
    },
    {
     "slug": "obsidian_wyvern"
+   },
+   {
+    "slug": "sand_worm"
    }
   ]
  },
@@ -4154,14 +4163,14 @@
   "icon": "0000041B000016EF"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4801773438763,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "recall_ruler",
   "tactical": false,
   "description": "Return target <hyperlink>Army</hyperlink> with your <hyperlink>Ruler</hyperlink> to your <hyperlink>Throne City</hyperlink>.",
   "name": "Recall Ruler",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "icon": "0000042A0000092B"
  },
  {
@@ -4374,14 +4383,14 @@
   "icon": "000003E300005A08"
  },
  {
-  "casting_cost": "150<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4578435140037,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
-  "id": "wizard_tower_teleportation_circle",
+  "id": "teleportation_circle",
   "tactical": false,
-  "description": "Return target <hyperlink>Army</hyperlink> to <hyperlink>Throne City</hyperlink>",
-  "name": "Wizard Tower: Teleportation Circle",
-  "operation_point_cost": 150,
+  "description": "Return all <hyperlink>Heroes</hyperlink> from target <hyperlink>Army</hyperlink> to <hyperlink>Throne City</hyperlink>.",
+  "name": "Teleportation Circle",
+  "operation_point_cost": 80,
   "icon": "0000042A00000955"
  },
  {
@@ -5396,14 +5405,14 @@
   "icon": "0000041B00000F78"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010632075,
   "spellType": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>",
   "id": "melt_armor",
   "tactical": true,
   "description": "Target enemies in a 1-hex radius:<bulletlist><bullet>Suffers 2 Sundered Defense.</bullet><bullet>Sustain 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet>",
   "name": "Melt Armor",
-  "operation_point_cost": 30,
+  "operation_point_cost": 35,
   "icon": "0000041B00000F80"
  },
  {
@@ -5617,7 +5626,7 @@
   "icon": "000003E300005AA4"
  },
  {
-  "casting_cost": "160<mana></mana> ",
+  "casting_cost": "120<mana></mana> ",
   "resid": 4514010631267,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "demonic_siphon",
@@ -5638,7 +5647,7 @@
    }
   ],
   "name": "Demonic Siphon",
-  "operation_point_cost": 160,
+  "operation_point_cost": 120,
   "icon": "0000041B00000C3E"
  },
  {
@@ -5889,20 +5898,20 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "soul_overflow",
   "tactical": true,
-  "description": "Friendly <hyperlink>Units</hyperlink> in a 1-hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain +5 maximum <hyperlink><hp></hp> Hit Point</hyperlink> until the end of battle.</bullet><bullet>Have 2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
+  "description": "Friendly <hyperlink>Units</hyperlink> in a 1-hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain +5 maximum <hyperlink><hp></hp> Hit Point</hyperlink> until the end of <hyperlink>Combat</hyperlink>.</bullet><bullet>Have 2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
   "name": "Soul Overflow",
   "operation_point_cost": 35,
   "icon": "0000041B000005E4"
  },
  {
-  "casting_cost": "150<mana></mana> ",
+  "casting_cost": "250<mana></mana> ",
   "resid": 4514010629343,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "call_greater_animal",
   "tactical": false,
   "description": "<bulletlist><bullet>Choose a Tier III or Tier IV Animal unit to add to your army.</bullet><bullet>The available Animals depend on the type of terrain the spell is cast on.</bullet></bulletlist>",
   "name": "Call Greater Animal",
-  "operation_point_cost": 150,
+  "operation_point_cost": 250,
   "icon": "000003E300004AF7",
   "summoned_units": [
    {
@@ -5957,7 +5966,7 @@
     "slug": "nightmare"
    },
    {
-    "slug": "caustic_worm"
+    "slug": "sand_worm"
    },
    {
     "slug": "phoenix"
@@ -5975,6 +5984,9 @@
     "slug": "obsidian_wyvern"
    },
    {
+    "slug": "caustic_worm"
+   },
+   {
     "slug": "vampire_spider_matriarch"
    },
    {
@@ -5985,9 +5997,6 @@
    },
    {
     "slug": "kraken"
-   },
-   {
-    "slug": "sand_worm"
    },
    {
     "slug": "sand_scorpion"
@@ -7401,7 +7410,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "goldtouched",
   "tactical": false,
-  "description": "Makes the target race gain an affinity for gold, granting them:<bulletlist><bullet>+2 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>+1 <gold></gold> <hyperlink>Gold</hyperlink> per <population></population> <hyperlink>Population</hyperlink> in their <hyperlink>Cities</hyperlink>.</bullet></bulletlist>",
+  "description": "Makes the target race gain an affinity for gold, granting them:<bulletlist><bullet>+2 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>+1 <gold></gold> <hyperlink>Gold</hyperlink> per <population></population> <hyperlink>Population</hyperlink> in their <hyperlink>City Caps</hyperlink>.</bullet><bullet>Gilded Shield.</bullet></bulletlist>",
   "name": "Goldtouched",
   "operation_point_cost": 450,
   "icon": "000003E300005D36"

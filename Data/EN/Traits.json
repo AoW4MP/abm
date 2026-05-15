@@ -43,7 +43,7 @@
     "name": "Additional units become Cavalry"
    },
    {
-    "name": "All cultural non-Hero bat-mounted Ranged Units gain the Echoing Shriek ability which replaces their base attack."
+    "name": "All cultural non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> bat-mounted Ranged Units gain the Echoing Shriek ability which replaces their base attack."
    },
    {
     "name": "Ruler starts with a Shrieking Bat mount."
@@ -1722,7 +1722,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "City Structures cost 50% more <structureprod></structureprod> <hyperlink>Production</hyperlink> but, in addition to their normal effects, they grant:<bulletlist><bullet>+4% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> out from total income.</bullet><bullet>+4% <mana></mana> <hyperlink>Mana</hyperlink> out from total income.</bullet></bulletlist><br></br><bulletlist><bullet>You can not build new <hyperlink>Cities</hyperlink>.</bullet><bullet>You can not integrate <hyperlink>Cities</hyperlink>.</bullet><bullet>You can not conquer new <hyperlink>Cities</hyperlink>.</bullet><bullet>Cities can only be Razed or Vassalized.</bullet></bulletlist>"
+    "name": "City Structures cost 60% more <structureprod></structureprod> <hyperlink>Production</hyperlink> but, in addition to their normal effects, they grant:<bulletlist><bullet>+4% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> out from total income.</bullet><bullet>+4% <mana></mana> <hyperlink>Mana</hyperlink> out from total income.</bullet></bulletlist><br></br><bulletlist><bullet>You can not build new <hyperlink>Cities</hyperlink>.</bullet><bullet>You can not integrate <hyperlink>Cities</hyperlink>.</bullet><bullet>You can not conquer new <hyperlink>Cities</hyperlink>.</bullet><bullet>Cities can only be Razed or Vassalized.</bullet></bulletlist>"
    },
    {
     "name": "Racial <hyperlink>Unit tier</hyperlink> 3 Units have +1 Rank"
@@ -1796,7 +1796,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Razing cities grant a permanent +40 <gold></gold> <hyperlink>Gold</hyperlink>, +40 <mana></mana> <hyperlink>Mana</hyperlink>, and +40 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income for every 3 <population></population> <hyperlink>Population</hyperlink> of the city that was razed."
+    "name": "On the moment of <hyperlink>Razing</hyperlink> <hyperlink>City</hyperlink>, gain permanent income:<bulletlist><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> for every <population></population> <hyperlink>Population</hyperlink> in Razed city.</bullet></bulletlist>"
+   },
+   {
+    "name": "<hyperlink>Razing</hyperlink> <hyperlink>Cities</hyperlink> takes -2 <turn></turn> <hyperlink>Turns</hyperlink> less (minimum 2 <turn></turn> <hyperlink>Turns</hyperlink>)."
    },
    {
     "name": "Can not obtain new <hyperlink>Cities</hyperlink> and conquered cities can only be razed."
@@ -2369,7 +2372,7 @@
     "name": "Cities and Provinces have +2 Vision Range."
    },
    {
-    "name": "All your non-<hyperlink>Hero</hyperlink> and non-Mythic Unit <hyperlink>Units</hyperlink> have Universal Camouflage."
+    "name": "All your non-<hyperlink>Hero</hyperlink> <hyperlink>Units</hyperlink> and non-Mythic Unit <hyperlink>Units</hyperlink> have Universal Camouflage."
    },
    {
     "name": "<hyperlink>Outposts</hyperlink> start with the Watch Tower upgrade built."
@@ -2403,7 +2406,7 @@
     "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +10% damage."
    },
    {
-    "name": "Battle Mage Units and Support Units provide +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
+    "name": "All Battle Mage Units, Support Units and Magic Fighter Units provide +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
    }
   ],
   "enabled": true,
@@ -2742,7 +2745,7 @@
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "The nearest City owned gains +3 <mana></mana> <hyperlink>Mana</hyperlink> and +3 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
+    "name": "Gain 3 <mana></mana> <hyperlink>Mana</hyperlink> and 3 <food></food> <hyperlink>Food</hyperlink>, per rank of <hyperlink>Unit</hyperlink> or level of <hyperlink>Hero</hyperlink> defeated in combat."
    }
   ],
   "enabled": true,
@@ -3250,6 +3253,9 @@
     "name": "Gains Swift."
    },
    {
+    "name": "Gains Spawn Hatchling ability."
+   },
+   {
     "name": "Additional units become Cavalry"
    },
    {
@@ -3468,7 +3474,7 @@
     "name": "<hyperlink>Units</hyperlink> of this race earn +25% <hyperlink><xp></xp> Experience</hyperlink> in <hyperlink>Combat</hyperlink>."
    },
    {
-    "name": "<hyperlink>Cities</hyperlink> of this race lose -1 <influence></influence> <hyperlink>Imperium</hyperlink> for each <population></population> <hyperlink>Population</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> of this race lose <fireCol>-2</fireCol> <happiness></happiness> <hyperlink>City Stability</hyperlink> for each <population></population> <hyperlink>Population</hyperlink>."
    }
   ],
   "enabled": true,

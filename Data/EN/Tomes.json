@@ -680,7 +680,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "Target enemy army:<bulletlist><bullet>Sustains 15 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>, doubled if cast on a Dungeon <hyperlink>Province</hyperlink>.</bullet><bullet>For 1 <hyperlink>World Map</hyperlink> <turn></turn> Turn, at the start of combat units in this army become Slowed for 3 <turn></turn> Turn.</bullet></bulletlist>",
+    "description": "For 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>, at the start of combat units in this army become Slowed for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
     "name": "Dungeon Hazard",
     "spell_slug": "dungeon_hazard",
     "tier": 3,
@@ -4334,7 +4334,7 @@
     "type": "<hyperlink>Empire Bonus</hyperlink>"
    },
    {
-    "description": "Friendly <hyperlink>Units</hyperlink> in a 1-hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain +5 maximum <hyperlink><hp></hp> Hit Point</hyperlink> until the end of battle.</bullet><bullet>Have 2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
+    "description": "Friendly <hyperlink>Units</hyperlink> in a 1-hex radius:<bulletlist><bullet>Gain 1 Strengthened.</bullet><bullet>Gain +5 maximum <hyperlink><hp></hp> Hit Point</hyperlink> until the end of <hyperlink>Combat</hyperlink>.</bullet><bullet>Have 2 of their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
     "name": "Soul Overflow",
     "spell_slug": "soul_overflow",
     "tier": 3,
@@ -5512,7 +5512,7 @@
     "type": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>"
    },
    {
-    "description": "Target friendly Tier I, II, or III non-Magic Origin, non-Construct unit:<bulletlist><bullet>Transforms into a <hyperlink>Warbreed</hyperlink>.</bullet><bullet>Heals <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Dies at the end of combat.</bullet></bulletlist><br><br></br>Cannot be used in Water Combat.",
+    "description": "Target friendly Tier I, II, or III non-Magic Origin, non-Construct unit:<bulletlist><bullet>Transforms into a <hyperlink>Warbreed</hyperlink>.</bullet><bullet>Heals <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Warbreed stays at the end of <hyperlink>Combat</hyperlink>.</bullet></bulletlist><br><br></br>Cannot be used in Water Combat.",
     "name": "Monstrous Rebirth",
     "spell_slug": "monstrous_rebirth",
     "tier": 5,

@@ -519,6 +519,12 @@
   "icon": "00000497000037BE"
  },
  {
+  "description": "Moving through Sand costs 4 <movementgeneral></movementgeneral> <hyperlink>Move Points</hyperlink> instead of 6.",
+  "name": "Sand Walk",
+  "slug": "000003e300004d61",
+  "icon": "000003E3000061DB"
+ },
+ {
   "description": "An offensive unit specialized in disrupting the enemy line. A Shock Unit has a <hyperlink>Charge</hyperlink> attack, which counters Shield Units, but can be countered by Polearm Units.",
   "name": "Shock Unit",
   "slug": "000003bd000028b7",
@@ -3258,7 +3264,7 @@
   "icon": "00000497000037A7"
  },
  {
-  "description": "<bulletlist><bullet>When this unit attacks, a random friendly unit within 2 hexes gains Strengthened for 3 <turn></turn> Turns.</bullet><bullet>When this unit enters <hyperlink>Defense Mode</hyperlink>, a random friendly unit within 2 hexes gains Bolstered Defense and Bolstered Resistance for 3 <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>When this unit attacks, 2 random friendly units within 2 hexes gains Strengthened for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>When this unit enters <hyperlink>Defense Mode</hyperlink>, 2 random friendly units within 2 hexes gains Bolstered Defense and Bolstered Resistance for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
   "name": "Lieutenant's Lead",
   "slug": "00000497000037ab",
   "icon": "00000497000037AC"
@@ -3546,12 +3552,6 @@
   "icon": "0000049700003882"
  },
  {
-  "description": "Moving through Sand costs 4 <movementgeneral></movementgeneral> <hyperlink>Move Points</hyperlink> instead of 6.",
-  "name": "Sand Walk",
-  "slug": "000003e300004d61",
-  "icon": "000003E3000061DB"
- },
- {
   "modifiers": [
    {
     "description": "Base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
@@ -3590,11 +3590,6 @@
     "count": 1
    },
    {
-    "description": "+10% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> on <hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks.",
-    "name": "Increased Accuracy",
-    "count": 1
-   },
-   {
     "description": "50% chance of dealing an extra 4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and 2 <happiness></happiness> <hyperlink>Morale</hyperlink> loss.",
     "name": "Echo",
     "count": 1
@@ -3603,7 +3598,7 @@
   "description": "Target unit sustains damage and loses <happiness></happiness> <hyperlink>Morale</hyperlink>.",
   "name": "Echoing Shriek",
   "slug": "shoot_bow_ability_000004970000339B",
-  "damage": "12<damagephysical></damagephysical> ",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Missile</hyperlink>"
@@ -3753,7 +3748,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 30% chance of inflicting Frozen for 1 <turn></turn> Turn. If unsuccessful, inflicts Status Vulnerability.",
+    "description": "Base 60% chance of inflicting Frozen for 1 <turn></turn> Turn. If unsuccessful, inflicts Status Vulnerability.",
     "name": "Frozen",
     "count": 1
    },
@@ -4801,7 +4796,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target non-Combat Summon enemy unit has a base 70% chance of being consumed.<bulletlist><bullet>If successful, gain Satiated Rift.</bullet><bullet>If resisted, target loses -7 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist><br></br>When this unit is killed, the last unit that was consumed is brought back.",
+  "description": "Target non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink>, non-Combat Summon enemy <hyperlink>Unit</hyperlink> has base 70% chance of being consumed.<br></br><br></br>If successful, this unit gain Satiated Rift.<br></br>If resisted, target:<bulletlist><bullet>Suffer Bleeding.</bullet><bullet>Losses -7 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist>",
   "name": "Abduct",
   "slug": "abduct_ability_0000049700000CD3",
   "damage": "",
@@ -5112,7 +5107,7 @@
     "count": 1
    },
    {
-    "description": "Adds +5% damage per each attack until the end of the battle.",
+    "description": "Adds +5% damage per each attack until the end of <hyperlink>Combat</hyperlink>.",
     "name": "Thrashing",
     "count": 1
    }
@@ -5412,7 +5407,7 @@
   "description": "Deal damage to enemy units in a 2-hex cone. Condemned units sustain +20% damage.",
   "name": "Divine Sundering",
   "slug": "divine_sundering_ability_00000490000028FF",
-  "damage": "25<damagefire></damagefire> 25<damagespirit></damagespirit> ",
+  "damage": "20<damagefire></damagefire> 20<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -7289,10 +7284,10 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit regains all its <hyperlink>Action Points</hyperlink>.",
+  "description": "Target friendly non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> regains its <hyperlink>Action Points</hyperlink>.",
   "name": "Spur to Action",
   "slug": "spur_to_action_ability_00000490000014C5",
   "damage": "",
@@ -7503,7 +7498,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<fullaction></fullaction>",
   "range": "6",
   "icon": "00000497000024B7"
  },
@@ -7536,7 +7531,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target friendly unit gains 5 random <hyperlink>Positive Status Effects</hyperlink>.",
@@ -7556,7 +7551,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target friendly unit regains full health as <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
@@ -7576,10 +7571,10 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit regains all its <hyperlink>Action Points</hyperlink>.",
+  "description": "Target friendly non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> regains its <hyperlink>Action Points</hyperlink>.",
   "name": "Spur to Action",
   "slug": "spur_to_action_ability_0000049000001402",
   "damage": "",
@@ -8707,7 +8702,7 @@
     "count": 1
    },
    {
-    "description": "Adds +5% damage per each attack until the end of the battle.",
+    "description": "Adds +5% damage per each attack until the end of <hyperlink>Combat</hyperlink>.",
     "name": "Thrashing",
     "count": 1
    }
@@ -9043,8 +9038,8 @@
  {
   "modifiers": [
    {
-    "description": "Base 50% chance of inflicting Frozen for 1 <turn></turn> Turn. If unsuccessful, inflicts Status Vulnerability.",
-    "name": "Frozen",
+    "description": "Base 60% chance of inflicting Slowed for 2 <turn></turn> Turns.",
+    "name": "Slowed",
     "count": 1
    }
   ],
@@ -13060,7 +13055,7 @@
   "description": "Fires ranged projectiles at target enemy unit.",
   "name": "Shoot Crossbow",
   "slug": "shoot_crossbow_ability_00000489000013E3",
-  "damage": "34<damagephysical></damagephysical> ",
+  "damage": "29<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Missile</hyperlink>"
@@ -13086,7 +13081,7 @@
   "icon": "000003BD00002EA7"
  },
  {
-  "description": "For each other friendly unit with Legion in combat, this unit gains:<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> on attacks.</bullet></bulletlist><br></br>This stacks up to 5 times.<br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "For each other friendly unit with Legion in combat, this unit gains:<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> on attacks.</bullet></bulletlist><br></br>This stacks up to 999 times.<br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "name": "Legion",
   "slug": "0000049700001b4f",
   "icon": "00000497000019AB"
@@ -13787,7 +13782,11 @@
   "icon": "0000048B00000278"
  },
  {
-  "notes": [],
+  "notes": [
+   {
+    "note": "Cooldown: 1 <turn></turn>"
+   }
+  ],
   "description": "Link to target friendly unit:<bulletlist><bullet>Damage sustained by the linked unit is dealt to this unit as well with a 50% reduction.</bullet><bullet>At the start of each turn, this unit and the linked unit gain Grace.</bullet></bulletlist><br></br>While active, gain Recall Mask of Prosperity.",
   "name": "Bestow Mask of Prosperity",
   "slug": "bestow_mask_of_prosperity_ability_0000048900001231",
@@ -14577,7 +14576,7 @@
  {
   "modifiers": [
    {
-    "description": "Adds +5% damage per each attack until the end of the battle.",
+    "description": "Adds +5% damage per each attack until the end of <hyperlink>Combat</hyperlink>.",
     "name": "Thrashing",
     "count": 1
    }
@@ -15751,7 +15750,7 @@
  {
   "modifiers": [
    {
-    "description": "Deals 13 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 13 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 13 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
+    "description": "Deals 18 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 18 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 18 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
     "name": "Cosmic Spark",
     "count": 1
    },
@@ -15791,7 +15790,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Pulls target unit to a hex adjacent to this one.",
+  "description": "Pulls any friendly or enemy target unit to a hex adjacent to this one.",
   "name": "Astral Pull",
   "slug": "astral_pull_ability_0000041C00000028",
   "damage": "",
@@ -15816,6 +15815,12 @@
   "name": "Astral Torrent",
   "slug": "000003e3000056c3",
   "icon": "000003E3000056C4"
+ },
+ {
+  "description": "Caster moves to target hex. Leaves 1 <hyperlink>Action Point</hyperlink>.",
+  "name": "Phase",
+  "slug": "000003e30000668e",
+  "icon": "000003E3000045B1"
  },
  {
   "modifiers": [],
@@ -16027,7 +16032,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Mind Strike",
   "slug": "mind_strike_ability_0000041B000017AF",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "22<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -16272,6 +16277,11 @@
     "description": " +20% damage against Immobilized and Slowed units.",
     "name": "Earthen Fury",
     "count": 1
+   },
+   {
+    "description": "Displaces the attacked target and moves onto its hex.",
+    "name": "Displace and Replace",
+    "count": 1
    }
   ],
   "description": "A Charge attack:<bulletlist><bullet>Gains +20% damage per hex traveled, up to 6 hexes.</bullet><bullet>Cancels Defense Mode.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Ignores Charge Resistance.</bullet></bulletlist>",
@@ -16317,7 +16327,7 @@
   "range": "0",
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
   "icon": "0000041B00001134"
@@ -16895,7 +16905,7 @@
   "icon": "000003E30000602A"
  },
  {
-  "description": "The first time, this unit's total <hyperlink><hp></hp> Hit Points</hyperlink> reach 15% or lower, it summons 2 Skeletons.<br></br><br></br>Works in water battles.",
+  "description": "The first time, this unit's total <hyperlink><hp></hp> Hit Points</hyperlink> reach 25% or lower, it summons 2 Skeletons.<br></br><br></br>Works in water battles.",
   "name": "Corpse Cage",
   "slug": "000004a600000070",
   "icon": "000004A600000071"
@@ -16970,7 +16980,13 @@
   "icon": "000003E30000627B"
  },
  {
-  "modifiers": [],
+  "modifiers": [
+   {
+    "description": "Attacks heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+    "name": "Life Steal",
+    "count": 1
+   }
+  ],
   "description": "Single magical attack at target unit.",
   "name": "Death Blast",
   "slug": "magic_blast_(single)_ability_0000041B000005EF",
@@ -17025,7 +17041,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -17467,7 +17483,7 @@
   "description": "Deals damage to target unit.",
   "name": "Lesser Burst",
   "slug": "wyvern_burst_ability_000003EC00002919",
-  "damage": "15<damagefire></damagefire> 1<damagephysical></damagephysical> ",
+  "damage": "16<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Single Shot</hyperlink>"
@@ -17569,13 +17585,18 @@
  {
   "modifiers": [
    {
-    "description": "Deals 8 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 8 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 8 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
+    "description": "Deals 9 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 9 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 9 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
     "name": "Cosmic Spark",
     "count": 1
    },
    {
     "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
     "name": "Piercing",
+    "count": 1
+   },
+   {
+    "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
+    "name": "Breaching",
     "count": 1
    }
   ],
@@ -17622,7 +17643,7 @@
  {
   "modifiers": [
    {
-    "description": "Deals 6 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 6 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 6 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
+    "description": "Deals 9 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 9 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, or 9 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> at random.",
     "name": "Cosmic Spark",
     "count": 1
    }
@@ -18756,7 +18777,7 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Electrified for 3 <turn></turn> Turns.",
+    "description": "Inflicts 3 Electrified for 3 <turn></turn> Turns.",
     "name": "Electrified",
     "count": 1
    }
@@ -18764,19 +18785,16 @@
   "description": "Deals damage to target and up to 2 other units within 4 hexes.",
   "name": "Lightning Strike",
   "slug": "lightning_strike_ability_000003EC00000DB3",
-  "damage": "20<damagelightning></damagelightning> ",
+  "damage": "25<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Magic</hyperlink>"
    }
   ],
-  "accuracy": "90%",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "accuracy": "Always Hits",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
   "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
    {
     "note": "Cooldown: 1 <turn></turn>"
    }
@@ -18836,7 +18854,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
   "description": "Summons a <hyperlink>Fire Runestone</hyperlink> onto target location.<br></br>This summon lasts for 3 <turn></turn> Turns.",
@@ -20179,6 +20197,12 @@
   "icon": "000003E3000064C3"
  },
  {
+  "description": "In a 3-hex cone, pushes back all units 1 hexes and inflicts Wet.",
+  "name": "Cloud in a Bottle",
+  "slug": "0000041b0000151b",
+  "icon": "0000041B0000151D"
+ },
+ {
   "modifiers": [
    {
     "description": "Attacks inflict Condemned.",
@@ -20362,7 +20386,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "<bulletlist><bullet>Base 100% chance to destroy target Embarked or Wet non-hero unit.</bullet><bullet>The lower the target's <hyperlink><hp></hp> Hit Points</hyperlink>, the greater the chance.</bullet><bullet>If the attempt fails, the target sustains 40 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Base 100% chance to destroy target Embarked or Wet non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink>.</bullet><bullet>The lower the target's <hyperlink><hp></hp> Hit Points</hyperlink>, the greater the chance.</bullet><bullet>If the attempt fails, the target sustains 40 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Pull of the Deep",
   "slug": "pull_of_the_deep_ability_000003E3000062C1",
   "damage": "",
@@ -21245,15 +21269,15 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
-    "name": "Sundered Resistance",
+    "description": "Base 90% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
+    "name": "Sundered Defense",
     "count": 1
    }
   ],
   "description": "Deals damage to enemy units in a 2-hex radius.",
   "name": "Caustic Eruption",
   "slug": "caustic_eruption_ability_000003E300005C57",
-  "damage": "16<damageblight></damageblight> 14<damagephysical></damagephysical> ",
+  "damage": "24<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -21408,7 +21432,7 @@
  },
  {
   "modifiers": [],
-  "description": "Base 60% chance for target non-friendly non-hero unit is being killed. This chance increases the lower is target's <hyperlink><hp></hp> Hit Point</hyperlink>.<br></br>If not successful, target sufer 3 Poisoned.<br></br><br></br>This ability always triggers the Life From Death.",
+  "description": "Target damaged non-friendly non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink>, if successful:<bulletlist><bullet>Target instantly killed, and chance increases with target's missing <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet></bulletlist><br></br>if not successful:<bulletlist><bullet>16 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Poisoned.</bullet></bulletlist><br></br><br></br>This ability always triggers the Life From Death.",
   "name": "Cycle's End",
   "slug": "cycles_end_ability_000003E300005BB7",
   "damage": "",
@@ -21421,7 +21445,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "notes": [
    {
@@ -21435,7 +21459,7 @@
  },
  {
   "modifiers": [],
-  "description": "Target friendly non-hero unit is killed, adjacent enemies suffer 15 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per tier of the unit sacrificed.<br></br><br></br>This ability always triggers the Life From Death.",
+  "description": "Target friendly non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> is killed, adjacent enemies suffer 15 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per tier of the unit sacrificed.<br></br><br></br>This ability always triggers the Life From Death.",
   "name": "Sacrificial Blight",
   "slug": "sacrificial_blight_ability_000003E300005BB7",
   "damage": "",
@@ -21452,7 +21476,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "icon": "0000048B0000010D"
@@ -21508,7 +21532,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target unit suffers:<bulletlist><bullet>2 Marked</bullet><bullet>2 Sundered Defense</bullet></bulletlist>",
+  "description": "Target unit gains:<bulletlist><bullet>2 Marked</bullet><bullet>Sundered Defense</bullet></bulletlist>",
   "name": "Tracker's Mark",
   "slug": "trackers_mark_ability_000003E300005B5E",
   "damage": "",
@@ -21849,7 +21873,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>3 Regeneration.</bullet></bulletlist>",
+  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>2 Regeneration.</bullet></bulletlist>",
   "name": "Song of Revelry",
   "slug": "song_of_revelry_ability_000003E300005A54",
   "damage": "",
@@ -21887,7 +21911,7 @@
   "icon": "000003E300005A62"
  },
  {
-  "description": "Upgrades unit abilites:<bulletlist><bullet>Song of Revelry and Song of Carnage put the unit into <hyperlink>Defense Mode</hyperlink> after use.</bullet><bullet>Song of Revelry grants an additional 1 Regeneration.</bullet></bulletlist>",
+  "description": "Upgrades unit abilites:<bulletlist><bullet>Song of Revelry and Song of Carnage.</bullet><bullet>Song of Carnage grants an additional Fortune.</bullet><bullet>Song of Revelry grants an additional Regeneration.</bullet></bulletlist>",
   "name": "Champion Songs",
   "slug": "0000048b00000c35",
   "icon": "000003E30000627B"
@@ -21958,13 +21982,13 @@
   "icon": "000003E300005887"
  },
  {
-  "description": "Unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
+  "description": "Unit is embarked and has:<bulletlist><bullet>-1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
   "name": "Embarked",
   "slug": "000003e3000064a0",
   "icon": "000003E3000064A3"
  },
  {
-  "description": "This land unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
+  "description": "This land unit is embarked and has:<bulletlist><bullet>-1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
   "name": "Embarked Unit",
   "slug": "0000041b00001c25",
   "icon": "0000041B00001C26"
@@ -23312,7 +23336,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Target friendly unit:<bulletlist><bullet>Gains 2 Bolstered Defense</bullet></bulletlist>",
@@ -23794,6 +23818,12 @@
   "range": "1",
   "notes": [],
   "icon": "000003EB0000040D"
+ },
+ {
+  "description": "Whenever an allied unit dies, this unit gains 1 Strengthened.<br></br><br></br>Does not trigger on the death of Combat Summons, Tower, and Siegecraft units.",
+  "name": "Maternal Rage",
+  "slug": "000003e1000014ee",
+  "icon": "000003E1000014EC"
  },
  {
   "description": "When an attack triggers a critical hit, it deals:<bulletlist><bullet>+4 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>+8 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> for Single Shot attacks.</bullet></bulletlist>",
@@ -25153,10 +25183,10 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
-  "description": "Spawns a hatchling spider.",
+  "description": "Spawns a <hyperlink>Vampire Spider Hatchling</hyperlink> for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
   "name": "Spawn Hatchling",
   "slug": "spawn_hatchling_vampire_ability_000003E300004A22",
   "damage": "",
@@ -25263,10 +25293,10 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
-  "description": "Spawns a hatchling spider.",
+  "description": "Spawns a Dread Spider Hatchling for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
   "name": "Spawn Hatchling",
   "slug": "spawn_hatchling_dread_ability_000003E300004A1F",
   "damage": "",
@@ -25809,7 +25839,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target non-Hero enemy <hyperlink>Unit</hyperlink> <hyperlink>Unit tier</hyperlink> I-IV has 70% base chance of being swalowed:<bulletlist><bullet>If successful, dispels all <hyperlink>Positive Status Effects</hyperlink> on target and heals this unit for +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>If resisted, target unit sustains 30 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and suffers Demoralized for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>When this unit killed, the last target being consumed, is brought back to life.",
+  "description": "Target non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> enemy <hyperlink>Unit</hyperlink> <hyperlink>Unit tier</hyperlink> I-IV has 70% base chance of being swalowed:<bulletlist><bullet>If successful, dispels all <hyperlink>Positive Status Effects</hyperlink> on target and heals this unit for +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>If resisted, target unit sustains 30 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and suffers Demoralized for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>When this unit killed, the last target being consumed, is brought back to life.",
   "name": "Terrifying Gorging",
   "slug": "terrifying_gorging_ability_(monster_version)_000003E300004447",
   "damage": "",
@@ -25995,12 +26025,6 @@
   "actionPoints": "<freeaction></freeaction>",
   "range": "1",
   "icon": "000003E100001196"
- },
- {
-  "description": "Whenever an allied unit dies, this unit gains 1 Strengthened.<br></br><br></br>Does not trigger on the death of Combat Summons, Tower, and Siegecraft units.",
-  "name": "Maternal Rage",
-  "slug": "000003e1000014ee",
-  "icon": "000003E1000014EC"
  },
  {
   "modifiers": [
@@ -26971,7 +26995,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target non-Hero enemy <hyperlink>Unit</hyperlink> <hyperlink>Unit tier</hyperlink> I-IV has 70% base chance of being swalowed:<bulletlist><bullet>If successful, dispels all <hyperlink>Positive Status Effects</hyperlink> on target and heals this unit for +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>If resisted, target unit sustains 30 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and suffers Demoralized for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>When this unit killed, the last target being consumed, is brought back to life.",
+  "description": "Target non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> enemy <hyperlink>Unit</hyperlink> <hyperlink>Unit tier</hyperlink> I-IV has 70% base chance of being swalowed:<bulletlist><bullet>If successful, dispels all <hyperlink>Positive Status Effects</hyperlink> on target and heals this unit for +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>If resisted, target unit sustains 30 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and suffers Demoralized for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><br></br>When this unit killed, the last target being consumed, is brought back to life.",
   "name": "Terrifying Gorging",
   "slug": "terrifying_gorging_ability_(monster_version)_hs_terrifying_gorge",
   "damage": "",
@@ -28221,22 +28245,18 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Target non-Hero Enemy:<bulletlist><bullet>Base 90% chance of transforming into a Weakened Tier 1 animal for 2 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+  "description": "Target non-<hyperlink>Hero</hyperlink> enemy has a base 90% chance to transform into a Tier I animal for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
   "name": "Polymorph",
-  "slug": "hs_ritualist_polymorph_ability_hs_ritualist_polymorph",
+  "slug": "wand_of_polymorph_ability_hs_ritualist_polymorph",
   "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Debuff</hyperlink>"
-   }
-  ],
+  "requisites": [],
   "accuracy": "Always Hits",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
-  "icon": "000004C000000ACD"
+  "icon": "0000045E000003CD"
  },
  {
   "description": "Attacks gain:<bulletlist><bullet>60% chance of inflicting Life Seed for 3<turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><br></br><hyperlink>Debuff</hyperlink> abilities gain:<bulletlist><bullet>Inflict Life Seed for 3<turn></turn> <hyperlink>Turns</hyperlink></bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
@@ -28252,6 +28272,9 @@
  },
  {
   "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
    {
     "note": "Cooldown: 2 <turn></turn>"
    }
@@ -28599,7 +28622,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly non-Hero unit regains its <hyperlink>Action Points</hyperlink> and gains Strengthened for 3 <turn></turn> <hyperlink>Turns</hyperlink>.<br></br><br></br>These effects jumps to 1 additional target within 3 hexes.",
+  "description": "Target friendly non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> regains its <hyperlink>Action Points</hyperlink> and gains Strengthened for 3 <turn></turn> <hyperlink>Turns</hyperlink>.<br></br><br></br>These effects jumps to 1 additional target within 3 hexes.",
   "name": "Coordinated Command",
   "slug": "hs_champion_coordinated_command_ability_hs_champion_coordinated_command",
   "damage": "",
@@ -30530,7 +30553,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Lose all stacks of Fervor.<br></br>Target enemy unit suffers 10<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per stack of Fervor consumed.<br></br>Does not generate Fervor.",
+  "description": "Lose all stacks of Fervor.<br></br>Target enemy unit suffers 7<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per stack of Fervor consumed.<br></br>Does not generate Fervor.",
   "name": "Smite",
   "slug": "hs_battlesaint_smite_ability_hs_battlesaint_smite",
   "damage": "",
@@ -30553,7 +30576,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "All friendly units gain:<bulletlist><bullet>+1 Regeneration per stack of Fervor consumed.</bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink>.",
@@ -30857,7 +30880,7 @@
   "icon": "0000049700000D3F"
  },
  {
-  "description": "While army leader, all non-hero Battle Mage Units, Support Units and Magic Fighter Units in the army gain:<bulletlist><bullet>+1 Extra Range on their Base attacks.</bullet></bulletlist>",
+  "description": "While army leader, all non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> Battle Mage Units, Support Units and Magic Fighter Units in the army gain:<bulletlist><bullet>+1 Extra Range on their Base attacks.</bullet></bulletlist>",
   "name": "Paragon of Astral",
   "slug": "0000048d00000abf",
   "icon": "0000048D00000ABC"
@@ -31096,7 +31119,7 @@
   "icon": "0000049700001879"
  },
  {
-  "description": "While army leader, all non-hero Ranged Units, Skirmisher Units and Mythic Units in the army gain:<bulletlist><bullet>+1 Extra Range on their Base Ranged attacks.</bullet></bulletlist>",
+  "description": "While army leader, all non-<hyperlink>Hero</hyperlink> <hyperlink>Unit</hyperlink> Ranged Units, Skirmisher Units and Mythic Units in the army gain:<bulletlist><bullet>+1 Extra Range on their Base Ranged attacks.</bullet></bulletlist>",
   "name": "Paragon of Materium",
   "slug": "0000048d00000aca",
   "icon": "0000048D00000AC9"
@@ -31497,7 +31520,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>3 Regeneration.</bullet></bulletlist>",
+  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>2 Regeneration.</bullet></bulletlist>",
   "name": "Song of Revelry",
   "slug": "song_of_revelry_ability_magic_flute_item__tier_3",
   "damage": "",
@@ -32008,7 +32031,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -32478,7 +32501,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -40576,7 +40599,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit gains a stack of Grace.",
+  "description": "Target friendly unit gains 2 stacks of Grace.",
   "name": "Touch of Grace",
   "slug": "touch_of_grace_ability_graceful_judge_mount_item_tier_ii",
   "damage": "",
@@ -43326,7 +43349,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
   "description": "Target non-<hyperlink>Hero</hyperlink> enemy has a base 90% chance to transform into a Tier I animal for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -43500,7 +43523,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -43677,10 +43700,10 @@
  },
  {
   "modifiers": [],
-  "description": "A Charge attack:<bulletlist><bullet>Gains +15% damage per hex traveled, up to 6 hexes.</bullet><bullet>Cancels Defense Mode.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
-  "name": "Charge Strike",
-  "slug": "melee_charge_strike_(item_forge_lance)_ability_archons_deliverance_lance_item_tier_4",
-  "damage": "15<damagephysical></damagephysical> 15<damagespirit></damagespirit> ",
+  "description": "A Charge attack:<bulletlist><bullet>Gains +20% damage per hex traveled, up to 6 hexes.</bullet><bullet>Cancels Defense Mode.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Ignores Charge Resistance.</bullet></bulletlist>",
+  "name": "Heavy Charge Strike",
+  "slug": "heavy_melee_charge_strike_(giants)_ability_archons_deliverance_lance_item_tier_4",
+  "damage": "18<damagephysical></damagephysical> 15<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -43696,7 +43719,7 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
   "notes": [],
-  "icon": "000003EB0000040D"
+  "icon": "000003EB00000542"
  },
  {
   "description": "Summons a Lightbringer next to this <hyperlink>Hero</hyperlink> at the start of battle.<br></br>This summon lasts for 3 <turn></turn> Turns.",
@@ -44318,7 +44341,7 @@
  {
   "modifiers": [
    {
-    "description": "Misfortune:<bulletlist><bullet>+11% <hyperlink>Fumble</hyperlink> chance.</bullet><bullet>Take 7 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> when <hyperlink>Fumble</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Misfortune counters Fortune.",
+    "description": "Misfortune:<bulletlist><bullet>+12% <hyperlink>Fumble</hyperlink> chance.</bullet><bullet>Take 7 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> when <hyperlink>Fumble</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Misfortune <hyperlink>counters</hyperlink> Fortune.",
     "name": "Misfortune",
     "count": 1
    }
@@ -46854,7 +46877,7 @@
   "icon": "00000497000035CA"
  },
  {
-  "description": "The death of another <hyperlink>Unit</hyperlink> has granted this unit:<bulletlist><bullet>+5 max <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>+4% <hyperlink>Critical Hit</hyperlink> chance.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
+  "description": "The death of another <hyperlink>Unit</hyperlink> has granted this unit:<bulletlist><bullet>+10 max <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>+4% <hyperlink>Critical Hit</hyperlink> chance.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
   "name": "Mortal Blessing",
   "slug": "0000048d00001a0f",
   "icon": "0000048D00001A0A"
@@ -46908,7 +46931,7 @@
   "icon": "0000049700000C16"
  },
  {
-  "description": "Unit gains:<bulletlist><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> per stack.</bullet><bullet>+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink> until end of battle.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
+  "description": "Unit gains:<bulletlist><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> per stack.</bullet><bullet>+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink> until end of <hyperlink>Combat</hyperlink>.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
   "name": "Fervor",
   "slug": "000004c00000092c",
   "icon": "000004C000000934"
@@ -47328,7 +47351,7 @@
   "icon": "0000049700000D14"
  },
  {
-  "description": "<bulletlist><bullet>+10% damage.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Strengthened <hyperlink>counters</hyperlink> Weakened.",
+  "description": "<bulletlist><bullet>+5% damage.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Strengthened <hyperlink>counters</hyperlink> Weakened.",
   "name": "Strengthened",
   "slug": "000003e1000013a7",
   "icon": "000003E1000013AA"
@@ -47453,7 +47476,7 @@
   "icon": "0000048D00001B1A"
  },
  {
-  "description": "This unit:<bulletlist><bullet>Sustains 3 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> each <turn></turn> <hyperlink>Turn</hyperlink> in <hyperlink>Combat</hyperlink>.</bullet><bullet>Receives -20% Healing in combat per stack of this.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
+  "description": "This unit:<bulletlist><bullet>Sustains 3 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> each <turn></turn> <hyperlink>Turn</hyperlink> in <hyperlink>Combat</hyperlink>.</bullet><bullet>Receives -10% Healing in combat per stack of this.</bullet></bulletlist><br></br><br></br>Stacks up to 5 times.",
   "name": "Decaying",
   "slug": "000003e300005b7e",
   "icon": "000003E300005B80"
@@ -47573,7 +47596,7 @@
   "icon": "0000041B000019E6"
  },
  {
-  "description": "This unit has +5<hyperlink><hp></hp> Hit Points</hyperlink> per stack.",
+  "description": "This unit has +2<hyperlink><hp></hp> Hit Points</hyperlink> per stack.",
   "name": "Materium Hardening",
   "slug": "0000048d00000e95",
   "icon": "0000048D00000E9A"
@@ -47807,7 +47830,7 @@
   "icon": "000003E3000067B6"
  },
  {
-  "description": "This unit heals +5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> at the end of its turn in battle.<br></br>Stacks up to 5 times.<br></br><br></br>Regeneration <hyperlink>counters</hyperlink> Poisoned and Decaying.",
+  "description": "This unit heals +3 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> at the end of its turn in battle.<br></br>Stacks up to 5 times.<br></br><br></br>Regeneration <hyperlink>counters</hyperlink> Poisoned and Decaying.",
   "name": "Regeneration",
   "slug": "0000045e000002ec",
   "icon": "000003E300004EE9"
@@ -47945,7 +47968,7 @@
   "icon": "0000041B00000B3E"
  },
  {
-  "description": "Misfortune:<bulletlist><bullet>+11% <hyperlink>Fumble</hyperlink> chance.</bullet><bullet>Take 7 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> when <hyperlink>Fumble</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Misfortune counters Fortune.",
+  "description": "Misfortune:<bulletlist><bullet>+12% <hyperlink>Fumble</hyperlink> chance.</bullet><bullet>Take 7 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> when <hyperlink>Fumble</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Misfortune <hyperlink>counters</hyperlink> Fortune.",
   "name": "Misfortune",
   "slug": "0000041b00000b09",
   "icon": "0000041B00000B0E"
@@ -47963,7 +47986,7 @@
   "icon": "0000041B00000532"
  },
  {
-  "description": "<bulletlist><bullet>This unit gains 3 <happiness></happiness> <hyperlink>Morale</hyperlink> at the end of its turn.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Rallying <hyperlink>counters</hyperlink> Remorse.",
+  "description": "<bulletlist><bullet>This unit gains +3 <happiness></happiness> <hyperlink>Morale</hyperlink> at the end of its turn.</bullet><bullet>Fortune when friendly <hyperlink>Combat Spell</hyperlink> cast.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Rallying <hyperlink>counters</hyperlink> Remorse.",
   "name": "Rally",
   "slug": "0000045e000002ef",
   "icon": "0000041B000004C9"
@@ -48077,7 +48100,7 @@
   "icon": "000003E300004C79"
  },
  {
-  "description": "+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink> until the end of battle.",
+  "description": "+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink> until the end of <hyperlink>Combat</hyperlink>.",
   "name": "Soul Overflow",
   "slug": "000003e300005fe0",
   "icon": "0000041B000005E4"
@@ -48137,13 +48160,13 @@
   "icon": "000003BD00002CFC"
  },
  {
-  "description": "Fortune:<bulletlist><bullet>+7% <hyperlink>Critical Hit</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Fortune counters Misfortune.",
+  "description": "Fortune:<bulletlist><bullet>+6% <hyperlink><crit></crit>Critical Hit Chance</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Fortune <hyperlink>counters</hyperlink> Misfortune.",
   "name": "Fortune",
   "slug": "000003e1000015b2",
   "icon": "000003E1000015B3"
  },
  {
-  "description": "<bulletlist><bullet>Deals -15% damage.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Weakened <hyperlink>counters</hyperlink> Strengthened.",
+  "description": "<bulletlist><bullet>Deals -10% damage.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Weakened <hyperlink>counters</hyperlink> Strengthened.",
   "name": "Weakened",
   "slug": "000003e1000013bb",
   "icon": "000003E1000013B8"
@@ -48344,7 +48367,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -49057,7 +49080,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Target friendly unit:<bulletlist><bullet>Gains 2 Bolstered Defense</bullet></bulletlist>",
@@ -49129,7 +49152,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>3 Regeneration.</bullet></bulletlist>",
+  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>2 Regeneration.</bullet></bulletlist>",
   "name": "Song of Revelry",
   "slug": "song_of_revelry_ability_equipment_upgrade_active_staff_song_of_revelry",
   "damage": "",
@@ -49202,7 +49225,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target unit suffers:<bulletlist><bullet>2 Marked</bullet><bullet>2 Sundered Defense</bullet></bulletlist>",
+  "description": "Target unit gains:<bulletlist><bullet>2 Marked</bullet><bullet>Sundered Defense</bullet></bulletlist>",
   "name": "Tracker's Mark",
   "slug": "trackers_mark_ability_equipment_upgrade_active_staff_trackers_mark",
   "damage": "",
@@ -49403,7 +49426,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Target friendly unit:<bulletlist><bullet>Gains 2 Bolstered Defense</bullet></bulletlist>",
@@ -49556,7 +49579,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>3 Regeneration.</bullet></bulletlist>",
+  "description": "This and adjacent friendly <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>3 Rally.</bullet><bullet>2 Regeneration.</bullet></bulletlist>",
   "name": "Song of Revelry",
   "slug": "song_of_revelry_ability_equipment_upgrade_active_wand_song_of_revelry",
   "damage": "",
@@ -49629,7 +49652,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target unit suffers:<bulletlist><bullet>2 Marked</bullet><bullet>2 Sundered Defense</bullet></bulletlist>",
+  "description": "Target unit gains:<bulletlist><bullet>2 Marked</bullet><bullet>Sundered Defense</bullet></bulletlist>",
   "name": "Tracker's Mark",
   "slug": "trackers_mark_ability_equipment_upgrade_active_wand_trackers_mark",
   "damage": "",
@@ -50145,7 +50168,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
   "description": "Target non-<hyperlink>Hero</hyperlink> enemy has a base 90% chance to transform into a Tier I animal for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -50297,7 +50320,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
@@ -50612,7 +50635,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
   "description": "Target non-<hyperlink>Hero</hyperlink> enemy has a base 90% chance to transform into a Tier I animal for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -50764,7 +50787,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 6 <turn></turn>"
+    "note": "Cooldown: 5 <turn></turn>"
    }
   ],
   "description": "Target:<bulletlist><bullet>Friendly Undead corpse is revived with 60% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Non-Undead corpse is raised as a <hyperlink>Zombie</hyperlink>.</bullet></bulletlist>",
